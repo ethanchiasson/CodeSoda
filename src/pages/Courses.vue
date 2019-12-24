@@ -123,10 +123,6 @@ h2 {
   padding-top: 20px;
 }
 
-p {
-  padding: 20px;
-}
-
 .description {
   margin: 0 auto;
 }
