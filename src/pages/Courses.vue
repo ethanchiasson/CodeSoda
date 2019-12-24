@@ -11,7 +11,7 @@
         <h2 style="margine-bottom: 0.25em">{{ edge.node.name }}</h2>
         <g-image
           :src="edge.node.image.file.url"
-          style="width: 100%; height: 300px; object-fit: contain;"
+          style="width: 100%; height: 250px; object-fit: contain;"
           :alt="edge.node.image.title"
         ></g-image>
         <button
@@ -21,11 +21,9 @@
           :data-item-image="edge.node.image.file.url"
           :data-item-price="edge.node.price"
           data-item-url="courses"
-        >
-          Buy course for ${{ edge.node.price }}
-        </button>
+        >Buy course for ${{ edge.node.price }}</button>
         <div class="description">
-          <p>{{ edge.node.description }}</p>
+          <p id="description">{{ edge.node.description }}</p>
         </div>
       </div>
     </div>
@@ -80,6 +78,10 @@ export default {
 </script>
 
 <style>
+#description {
+  padding: 20px;
+}
+
 .pager {
   font-size: 1.25rem;
   letter-spacing: 0.5px;
@@ -104,7 +106,7 @@ export default {
   border-radius: 5px;
   color: white;
   padding: 8px 16px;
-  margin-top: 15px;
+  margin-top: 10px;
   text-decoration: none;
   font-size: 1rem;
 }
@@ -120,7 +122,7 @@ p {
 }
 
 h2 {
-  padding-top: 20px;
+  padding: 10px;
 }
 
 .description {
