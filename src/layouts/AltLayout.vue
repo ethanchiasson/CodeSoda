@@ -4,9 +4,13 @@
       <strong>
         <!-- This exact keyword stops the index/home
         always showing as an active-->
-        <g-link exact to="/" class="siteName">{{
+        <g-link exact to="/" class="siteName">
+          <!-- {{
           $static.metaData.siteName
-        }}</g-link>
+          }}-->
+          <g-image class="logo" alt="Logo" src="~/assets/images/soda.png" height="40" width="40" />
+        </g-link>
+        <!-- <g-image class="logo" alt="Logo" src="~/assets/images/soda.png" height="40" width="40" /> -->
       </strong>
       <nav class="nav">
         <g-link exact class="nav__link" to="/">Home</g-link>
@@ -94,8 +98,8 @@ body {
   /* addingsd padding to active link background */
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   color: white;
 }
 

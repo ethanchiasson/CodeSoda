@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: "CodeSoda.io",
+  siteName: "websoda.io",
   siteDescription:
     "A Publication with Refreshing Content on everything Web development.",
   plugins: [

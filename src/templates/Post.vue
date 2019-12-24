@@ -4,7 +4,7 @@
       <a href="javascript:history.go(-1)" class="button">↩</a>
     </div>
     <h1 v-html="$page.post.title"></h1>
-    <g-image :src="$page.post.cover_image" style="margin: auto"></g-image>
+    <g-image :src="$page.post.cover_image" style="margin: 0 auto"></g-image>
     <div class="divider"></div>
     <div class="author" style="overflow: hidden; margin-top: 20px;">
       <g-image :src="$page.post.image" style="float: left;"></g-image>
@@ -60,7 +60,7 @@ query($path: String!) {
     date(format: "MMMM Do, YYYY")
     timeToRead
     content
-    cover_image(width: 750, height:300, quality: 100)
+    cover_image(width: 750, height:300, quality: 100, fit: fill)
   }
 }
 </page-query>
@@ -268,8 +268,7 @@ pre.language-js {
   text-shadow: none;
   /* border: 2px solid whitesmoke; */
   border-radius: 15px;
-  margin: auto;
-  width: 400px;
+  margin: 0 auto;
   margin-top: 25px;
   margin-bottom: 25px;
   box-shadow: 5px 7px yellow;
@@ -280,8 +279,7 @@ pre.language-html {
   text-shadow: none;
   /* border: 2px solid whitesmoke; */
   border-radius: 15px;
-  margin: auto;
-  width: 400px;
+  margin: 0 auto;
   margin-top: 25px;
   margin-bottom: 25px;
   box-shadow: 5px 7px lightseagreen;
@@ -292,8 +290,7 @@ pre.language-json {
   text-shadow: none;
   /* border: 2px solid whitesmoke; */
   border-radius: 15px;
-  margin: auto;
-  width: 400px;
+  margin: 0 auto;
   margin-top: 25px;
   margin-bottom: 25px;
   box-shadow: 5px 7px yellow;
@@ -304,8 +301,7 @@ pre.language-css {
   text-shadow: none;
   /* border: 2px solid whitesmoke; */
   border-radius: 15px;
-  margin: auto;
-  width: 400px;
+  margin: 0 auto;
   margin-top: 25px;
   margin-bottom: 25px;
   box-shadow: 5px 7px plum;
@@ -316,8 +312,7 @@ pre.language-cs {
   text-shadow: none;
   /* border: 2px solid whitesmoke; */
   border-radius: 15px;
-  margin: auto;
-  width: 400px;
+  margin: 0 auto;
   margin-top: 25px;
   margin-bottom: 25px;
   box-shadow: 5px 7px rgb(15, 134, 144);
