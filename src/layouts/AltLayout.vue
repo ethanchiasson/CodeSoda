@@ -11,7 +11,7 @@
       <nav class="nav">
         <g-link exact class="nav__link" to="/">Home</g-link>
         <g-link class="nav__link" to="/blog">Articles</g-link>
-        <g-link class="nav__link" to="/about">Authors</g-link>
+        <!-- <g-link class="nav__link" to="/about">Authors</g-link> -->
         <g-link class="nav__link" to="/courses">Courses</g-link>
       </nav>
     </header>
