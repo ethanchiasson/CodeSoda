@@ -8,7 +8,7 @@
           <!-- {{
           $static.metaData.siteName
           }}-->
-          <g-image class="logo" alt="Logo" src="~/assets/images/soda.png" height="40" width="40" />
+          <g-image class="logo" alt="Logo" src="~/assets/images/soda.png" height="45" width="45" />
         </g-link>
         <!-- <g-image class="logo" alt="Logo" src="~/assets/images/soda.png" height="40" width="40" /> -->
       </strong>
@@ -57,7 +57,7 @@ body {
   background: #091a28;
   /*#091a28  */
   /* #002b36 */
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 /* adds color to active route */

@@ -121,20 +121,16 @@ p {
   color: white;
 }
 
-h2 {
-  padding: 10px;
-}
-
 .description {
   margin: 0 auto;
+  width: 70%;
 }
 
 .individualCourse {
-  background-color: #0d2538;
+  /* background-color: #0d2538; */
   border-radius: 10px;
-  margin-bottom: 10px;
   margin: 0 auto;
-  margin-bottom: 20px;
-  width: 70%;
+  margin-bottom: 40px;
+  width: 100%;
 }
 </style>

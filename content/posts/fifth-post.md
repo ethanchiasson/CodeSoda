@@ -10,7 +10,7 @@ cover_image: "./images/bg2.jpg"
 
 Let me start by saying that this tutorial will be using XHR. It is common knowledge that when working with APIs ,fetch is the go to method ( depending on who you ask of course ). Furthermore, in hopes of keeping the tutorial light on JavaScript ( as it can get complex ) , we will be making 3 separate calls to 3 different api URLs. We could build a function to get all 3 URLs and load them dynamically, but we won’t go that in depth, because this tutorial is focused on building a chrome extension.
 
-# _#_ The Setup
+# _</>_ The Setup
 
 Before we start, I am assuming you know how to create a folder for your project, open it in your editor, and create a simple HTML boiler plate. Once you are ready, keep reading
 
@@ -37,7 +37,7 @@ Save your project files and open up a a Chrome browser and navigate to the menu 
 
 Once you are on the extension page, click the “Load unpacked” button located at the top of the page. If you can not find this button, make sure you enable developer mode ( which can be done by clicking the toggle button at the top of the same page). Find your project folder and select it. Once you selected the folder, the working chrome extension should be displayed next to your other extension, assuming you followed the steps correctly. If you recieve any errors at this point, double check your code or search for the error. Google can be your friend.
 
-# _#_ Getting our Data
+# _</>_ Getting our Data
 
 Graduations.... I guess. I mean, let’s be honest, our extension ( in its current state ) kinda sucks. A chrome extension is nothing much unless we add some real world functionality to it, so let’s get started.
 
@@ -47,13 +47,13 @@ First, you are going to need to grab some things from Cryptonator in order for u
 
 The link to the Cryptonator api here be found Here
 
-## _</>_ Setting up the API
+## _#_ Setting up the API
 
 haha
 
-## _</>_ Making the calls
+## _#_ Making the calls
 
-# _#_ The build
+# _</>_ The build
 
 Now that we have our manifest.json working and our api setup and providing our project with live data, the hard part is done.
 
@@ -63,7 +63,7 @@ All that is left to do is ...
 2. Display our data without our HTML elements
 3. Style our extension ( because UI is very important )
 
-## _</>_ Building our HTML
+## _#_ Building our HTML
 
 This part is really up to you, but If you want to follow this tutorial to a tee, here is the code.
 
@@ -73,7 +73,7 @@ Here I define a main container container name and within it create 3 container d
 
 You make also notice that I have 3 divs , each with their own Unique Id= . ID’s are manly used to allow our JavaScript file ( our the functions within it ) to interact with a particular HTML element. We will call each of these IDs in the next section.
 
-## _</>_ Displaying our data
+## _#_ Displaying our data
 
 Now that our basic HTML layout is established , we can now display our data.
 
@@ -93,7 +93,7 @@ After you are able to get the price for Bitcoin to display, copy and past the sa
 
 That’s It! You should now see the data displayed In your extension.
 
-# _#_ Styling Our Extension
+# _</>_ Styling Our Extension
 
 At this point our Chrome Extension is fully functional and works great, but it’s pretty ugly. This post is already pretty long, so I won’t go through everything I have done in terms of CSS, but if you are following along with my exact code, feel free to copy and past this code into your project and edit it how you like.
 

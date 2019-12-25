@@ -4,29 +4,130 @@
       <a href="javascript:history.go(-1)" class="button">↩</a>
     </div>
     <h1 v-html="$page.post.title"></h1>
-    <g-image :src="$page.post.cover_image" style="margin: 0 auto"></g-image>
+    <!-- <g-image :src="$page.post.cover_image" style="margin: 0 auto"></g-image> -->
     <div class="divider"></div>
-    <div class="author" style="overflow: hidden; margin-top: 20px;">
-      <g-image :src="$page.post.image" style="float: left;"></g-image>
-      <p
-        v-html="$page.post.author"
-        style="margin-left: 110px; margin-top: 25px; font-weight: bold;"
-      ></p>
-      <p style="font-weight: normal; font-size: 1rem; margin-left: 110px;" v-html="$page.post.date"></p>
-    </div>
-    <div class="clap" style="overflow: hidden;">
-      <applause-button
-        color="#2e7eff"
-        style="width: 50px; height: 50px; margin-top: 20px; float: left;"
-      />
-      <div class="time" style="float:right; margin-right: 90px;">
-        <div class="timeToRead" style="overflow: hidden; margin-top: 20px;">
-          <p style="float: left;" v-html="$page.post.timeToRead"></p>
-          <p style="float: right;">minute read</p>
+    <div class="headerContainer" style="overflow: hidden;">
+      <div class="author" style="overflow: hidden; margin-top: 20px; float: left">
+        <g-image :src="$page.post.image" style="float: left;"></g-image>
+        <p
+          v-html="$page.post.author"
+          style="margin-left: 110px; margin-top: 25px; font-weight: bold;"
+        ></p>
+        <p
+          style="font-weight: normal; font-size: 1rem; margin-left: 110px;"
+          v-html="$page.post.date"
+        ></p>
+      </div>
+      <div class="clap" style="overflow: hidden; float: right; padding: 2px;">
+        <div class="time" style="float:left; margin-right: 250px;">
+          <div class="timeToRead" style="overflow: hidden; margin-top: 20px;">
+            <p style="float: left;" v-html="$page.post.timeToRead"></p>
+            <p style="float: right;">minute read</p>
+          </div>
         </div>
+        <applause-button
+          color="#2e7eff"
+          style="width: 50px; height: 50px; margin-top: 20px; float: right;"
+        />
       </div>
     </div>
-    <div v-html="$page.post.content"></div>
+    <div v-html="$page.post.content" class="posttext"></div>
+    <div class="divider"></div>
+    <div class="affiliate">
+      <div class="affiliateBanner"></div>
+      <p class="affiliateSub">This affiliate banner helps support what we do! 😇</p>
+    </div>
+    <footer>
+      <!-- Begin newsletterContainer -->
+      <div class="newsletterContainer">
+        <!-- Begin Mailchimp Signup Form -->
+        <div id="mc_embed_signup">
+          <form
+            action="https://gmail.us4.list-manage.com/subscribe/post?u=57c4947af83579a34e710970b&amp;id=1e119d8cf0"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            class="validate"
+            target="_blank"
+            novalidate
+          >
+            <div id="mc_embed_signup_scroll">
+              <div class="mc-field-group">
+                <div class="newsletterLabel">
+                  <label for="mce-EMAIL">Hey you! Please Consider Joining The Newsletter 💌</label>
+                </div>
+                <div class="newsletterSubtitle">
+                  <p2>
+                    Joining our newsletter means that you can stay up to date on the
+                    latest trends in web development and design with our hand picked list of articles
+                    from our amazingly talented curated authors.
+                  </p2>
+                </div>
+                <input
+                  type="email"
+                  value
+                  name="EMAIL"
+                  class="required email"
+                  id="mce-EMAIL"
+                  placeholder="Your Email Address"
+                />
+              </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input
+                  type="text"
+                  name="b_57c4947af83579a34e710970b_1e119d8cf0"
+                  tabindex="-1"
+                  value
+                />
+              </div>
+              <div class="clear">
+                <input
+                  type="submit"
+                  value="Subscribe"
+                  name="subscribe"
+                  id="mc-embedded-subscribe"
+                  class="button"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <!--End mc_embed_signup-->
+      </div>
+      <!--newsletter container-->
+      <div class="footerContainer">
+        <div class="left">
+          <p class="aboutFooter">
+            CodeSoda.io is maintained by Ethan Chiasson and small team.
+            <br />We aim to provide users with high quality content related to
+            <br />programming, front-end development & design,
+            <br />and all
+            things web development.
+          </p>
+        </div>
+        <div class="right">
+          <ul>
+            <li>
+              <a href>Contact</a>
+            </li>
+            <li>
+              <a href>Advertise</a>
+            </li>
+            <li>
+              <a href>Articles</a>
+            </li>
+            <li>
+              <a href>Authors</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </Layout>
 </template>
 
@@ -60,22 +161,151 @@ query($path: String!) {
     date(format: "MMMM Do, YYYY")
     timeToRead
     content
-    cover_image(width: 750, height:300, quality: 100, fit: fill)
+    cover_image(width: 425, height:200, quality: 100, fit: fill)
   }
 }
 </page-query>
 
 <style>
+footer {
+  margin-top: 75px;
+}
+
+/* News Letter Styles */
+.newsletterSubtitle {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+  color: #43779e;
+}
+
+.newsletterLabel {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 1.25rem;
+  margin-right: 10px;
+}
+
+.newsletterContainer {
+  width: 100%;
+}
+
+#mc_embed_signup {
+  /* Adding these things got me disred email form */
+  display: inline-block;
+  /*  */
+  text-align: center;
+  margin-left: 20px;
+  color: white;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+#mce-EMAIL {
+  background-color: #091a28;
+  border: #43779e 2px solid;
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  font-size: 1rem;
+  width: 75%;
+}
+
+#mc-embedded-subscribe {
+  color: white;
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100px;
+  background-color: #091a28;
+  border: #43779e 2px solid;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+  width: 40%;
+}
+
+#mc-embedded-subscribe:hover {
+  color: white;
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 40%;
+  background: linear-gradient(45deg, #2e7eff, rgb(231, 50, 255));
+  border: #091a28 2px solid;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+/* End News Letter Styles */
+
+/* Footer Styles */
+.footerContainer {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.aboutFooter {
+  text-decoration: none;
+  font-size: bold;
+  color: #43779e;
+}
+
+.left,
+.right {
+  background-color: #091a28;
+  width: auto;
+  height: auto;
+  text-align: start;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+/* End Footer Styles */
+
+a {
+  text-decoration: none;
+  font-size: bold;
+  color: #43779e;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding-top: 5px;
+}
+
+.affiliateSub {
+  color: #43779e;
+}
+.affiliateBanner {
+  width: 100%;
+  height: 150px;
+  background-color: #002b36;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
 .time {
   color: grey;
 }
 .clap {
-  width: 300px;
+  margin-top: 35px;
 }
 applause-button {
   position: relative;
   cursor: pointer;
-  margin-left: 20px;
 }
 applause-button .style-root {
   position: absolute;
@@ -256,7 +486,14 @@ code {
   border-radius: 4px;
 }
 em {
-  color: #2e7eff;
+  color: white;
+  padding: 2px;
+  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+  background: linear-gradient(
+    127deg,
+    rgba(231, 50, 255, 0.8),
+    rgb(1, 69, 255) 70.71%
+  );
 }
 
 body {
@@ -271,9 +508,10 @@ pre.language-js {
   margin: 0 auto;
   margin-top: 25px;
   margin-bottom: 25px;
-  box-shadow: 5px 7px yellow;
+  box-shadow: 5px 7px rgb(223, 223, 38);
 }
 
+/*  HTML Code Block Styling */
 pre.language-html {
   background-color: #0d2538;
   text-shadow: none;
@@ -282,9 +520,10 @@ pre.language-html {
   margin: 0 auto;
   margin-top: 25px;
   margin-bottom: 25px;
-  box-shadow: 5px 7px lightseagreen;
+  box-shadow: 5px 7px darkcyan;
 }
 
+/* JSON Code Block Styling */
 pre.language-json {
   background-color: #0d2538;
   text-shadow: none;
@@ -293,7 +532,7 @@ pre.language-json {
   margin: 0 auto;
   margin-top: 25px;
   margin-bottom: 25px;
-  box-shadow: 5px 7px yellow;
+  box-shadow: 5px 7px wheat;
 }
 
 pre.language-css {
@@ -358,7 +597,6 @@ code.language-cs {
 }
 
 .author {
-  width: 700px;
   margin-top: -15px;
 }
 
@@ -367,9 +605,16 @@ code.language-cs {
   margin-top: -20px;
   margin-bottom: 20px;
 }
+.timeToRead {
+  font-size: 1rem;
+}
 
 p {
   font-weight: normal;
+}
+
+.posttext {
+  font-size: 1.1rem;
 }
 
 .divider {
