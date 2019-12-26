@@ -57,11 +57,11 @@
                   <label for="mce-EMAIL">Hey you! Please Consider Joining The Newsletter 💌</label>
                 </div>
                 <div class="newsletterSubtitle">
-                  <p2>
+                  <p>
                     Joining our newsletter means that you can stay up to date on the
                     latest trends in web development and design with our hand picked list of articles
                     from our amazingly talented curated authors.
-                  </p2>
+                  </p>
                 </div>
                 <input
                   type="email"
