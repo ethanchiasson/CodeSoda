@@ -178,6 +178,7 @@ footer {
   margin: auto;
   margin-bottom: 30px;
   color: #43779e;
+  font-size: 1rem;
 }
 
 .newsletterLabel {
