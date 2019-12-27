@@ -103,7 +103,7 @@
       <div class="footerContainer">
         <div class="left">
           <p class="aboutFooter">
-            CodeSoda.io is maintained by Ethan Chiasson and small team.
+            WebSoda.io is maintained by Ethan Chiasson and small team.
             <br />We aim to provide users with high quality content related to
             <br />programming, front-end development & design,
             <br />and all
@@ -173,12 +173,13 @@ footer {
 
 /* News Letter Styles */
 .newsletterSubtitle {
-  width: 70%;
+  width: 80%;
   text-align: center;
   margin: auto;
   margin-bottom: 30px;
   color: #43779e;
   font-size: 1rem;
+  font-weight: bold;
 }
 
 .newsletterLabel {
@@ -608,10 +609,6 @@ code.language-cs {
 }
 .timeToRead {
   font-size: 1rem;
-}
-
-p {
-  font-weight: normal;
 }
 
 .posttext {

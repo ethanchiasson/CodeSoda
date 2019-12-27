@@ -60,7 +60,7 @@
                   <label for="mce-EMAIL">Hey you! Please Consider Joining The Newsletter 💌</label>
                 </div>
                 <div class="newsletterSubtitle">
-                  <p2>
+                  <p2 class="newsletterSubtitle">
                     Joining our newsletter means that you can stay up to date on the
                     latest trends in web development and design with our hand picked list of articles
                     from our amazingly talented curated authors.
@@ -106,7 +106,7 @@
       <div class="footerContainer">
         <div class="left">
           <p class="aboutFooter">
-            CodeSoda.io is maintained by Ethan Chiasson and small team.
+            WebSoda.io is maintained by Ethan Chiasson and small team.
             <br />We aim to provide users with high quality content related to
             <br />programming, front-end development & design,
             <br />and all
@@ -180,11 +180,12 @@ footer {
 
 /* News Letter Styles */
 .newsletterSubtitle {
-  width: 70%;
+  width: 80%;
   text-align: center;
   margin: auto;
   margin-bottom: 30px;
   color: #43779e;
+  font-size: 1rem;
 }
 
 .newsletterLabel {
