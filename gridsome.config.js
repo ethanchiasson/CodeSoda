@@ -7,7 +7,7 @@
 module.exports = {
   siteName: "websoda.io",
   siteDescription:
-    "A Publication with Refreshing Content on everything Web development.",
+    "A Publication with Refreshing Content on Everything Web development.",
   plugins: [
     {
       use: "@gridsome/source-contentful",

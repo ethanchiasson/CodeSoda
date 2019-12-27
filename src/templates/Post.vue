@@ -3,7 +3,7 @@
     <div class="backButton">
       <a href="javascript:history.go(-1)" class="button">↩</a>
     </div>
-    <h1 v-html="$page.post.title"></h1>
+    <h1 v-html="$page.post.title" style="text-align: center"></h1>
     <!-- <g-image :src="$page.post.cover_image" style="margin: 0 auto"></g-image> -->
     <div class="divider"></div>
     <div class="headerContainer" style="overflow: hidden;">
@@ -88,7 +88,7 @@
               <div class="clear">
                 <input
                   type="submit"
-                  value="Subscribe"
+                  value="Stay Updated"
                   name="subscribe"
                   id="mc-embedded-subscribe"
                   class="button"
@@ -102,13 +102,9 @@
       <!--newsletter container-->
       <div class="footerContainer">
         <div class="left">
-          <p class="aboutFooter">
-            WebSoda.io is maintained by Ethan Chiasson and small team.
-            <br />We aim to provide users with high quality content related to
-            <br />programming, front-end development & design,
-            <br />and all
-            things web development.
-          </p>
+          <p
+            class="aboutFooter"
+          >WebSoda.io is maintained by Ethan Chiasson and small team. We aim to provide users with high quality content related to programming, front-end development & design, and all things web development.</p>
         </div>
         <div class="right">
           <ul>
@@ -176,7 +172,7 @@ footer {
   width: 80%;
   text-align: center;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #43779e;
   font-size: 1rem;
   font-weight: bold;
@@ -191,6 +187,14 @@ footer {
 
 .newsletterContainer {
   width: 100%;
+  background-color: #0d2538;
+  border-radius: 0px;
+  padding-top: 15px;
+  border-top: 4px solid red;
+  border-bottom: 4px solid red;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-image: linear-gradient(to right, #2e7eff, rgb(231, 50, 255)) 1 stretch;
 }
 
 #mc_embed_signup {
@@ -200,7 +204,7 @@ footer {
   text-align: center;
   margin-left: 20px;
   color: white;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-weight: bold;
 }
 
@@ -654,6 +658,6 @@ code.language-cs {
 }
 
 .backButton {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 </style>

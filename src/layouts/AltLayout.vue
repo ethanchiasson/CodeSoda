@@ -8,7 +8,7 @@
           <!-- {{
           $static.metaData.siteName
           }}-->
-          <g-image class="logo" alt="Logo" src="~/assets/images/soda.png" height="45" width="45" />
+          <g-image class="logo" alt="Logo" src="~/assets/images/soda.png" height="40" width="40" />
         </g-link>
         <!-- <g-image class="logo" alt="Logo" src="~/assets/images/soda.png" height="40" width="40" /> -->
       </strong>
@@ -34,11 +34,10 @@ query {
 
 <script>
 import Footer from "~/components/Footer.vue";
-import ToggleTheme from "~/components/ToggleTheme.vue";
+
 export default {
   components: {
-    Footer,
-    ToggleTheme
+    Footer
   },
   props: ["showFooter"]
 };

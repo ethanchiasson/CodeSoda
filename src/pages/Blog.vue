@@ -3,10 +3,10 @@
   <layout>
     <h1 style="color: white ;">Articles</h1>
     <p class="welcome">
-      <a class="subtitle">👋 Welcome Fellow Developer!</a>
+      <a class="subtitle">👋 Welcome Fellow Coder!</a>
       <br />
-      <br />Search through our collection of articles by some pretty awesome
-      developers.
+      <br />Search through our collection of articles by awesome
+      developers like you.
       <!-- <br />Interested in becoming a curated author ?
       <a href="Google.com" class="newAuthorLink">Click Here</a>-->
     </p>
@@ -91,7 +91,7 @@
               <div class="clear">
                 <input
                   type="submit"
-                  value="Subscribe"
+                  value="Stay Updated"
                   name="subscribe"
                   id="mc-embedded-subscribe"
                   class="button"
@@ -197,6 +197,14 @@ footer {
 
 .newsletterContainer {
   width: 100%;
+  background-color: #0d2538;
+  border-radius: 0px;
+  padding-top: 15px;
+  border-top: 4px solid red;
+  border-bottom: 4px solid red;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-image: linear-gradient(to right, #2e7eff, rgb(231, 50, 255)) 1 stretch;
 }
 
 #mc_embed_signup {
