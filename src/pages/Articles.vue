@@ -26,14 +26,14 @@
         <div class="tagContainer">
           <g-link
             class="span"
-            style="padding: .5em ; background-color: #091A28"
+            style="padding: .5em ; background-color: #f1e7d0;"
             v-for="tag in edge.node.tags"
             :to="tag.path"
             :key="tag.id"
           >{{ tag.id }}</g-link>
           <br />
           <div class="readMore">
-            <g-link :to="edge.node.path" class="gLinkPost" style="color: white">Read More</g-link>
+            <g-link :to="edge.node.path" class="gLinkPost" style="color: #222222">Read More</g-link>
           </div>
         </div>
       </div>
@@ -91,7 +91,7 @@
               <div class="clear">
                 <input
                   type="submit"
-                  value="Stay Updated"
+                  value="Subscribe"
                   name="subscribe"
                   id="mc-embedded-subscribe"
                   class="button"
@@ -184,7 +184,7 @@ footer {
   text-align: center;
   margin: auto;
   margin-bottom: 30px;
-  color: #43779e;
+  color: #f1e7d0;
   font-size: 1rem;
 }
 
@@ -197,7 +197,8 @@ footer {
 
 .newsletterContainer {
   width: 100%;
-  background-color: #0d2538;
+  /* background-color: #0d2538; */
+  background-color: #222222;
   border-radius: 0px;
   padding-top: 15px;
   border-top: 4px solid red;
@@ -219,23 +220,23 @@ footer {
 }
 
 #mce-EMAIL {
-  background-color: #091a28;
-  border: #43779e 2px solid;
+  background-color: #f1e7d0;
+  border: #222222 2px solid;
   border-radius: 5px;
-  color: white;
+  color: #222222;
   padding: 5px;
   font-size: 1rem;
   width: 75%;
 }
 
 #mc-embedded-subscribe {
-  color: white;
+  color: #222222;
   padding: 5px;
   font-size: 1rem;
   font-weight: bold;
   width: 100px;
-  background-color: #091a28;
-  border: #43779e 2px solid;
+  background-color: #f1e7d0;
+  border: #222222 2px solid;
   border-radius: 5px;
   margin-top: 15px;
   cursor: pointer;
@@ -267,12 +268,12 @@ footer {
 .aboutFooter {
   text-decoration: none;
   font-size: bold;
-  color: #43779e;
+  color: #222222;
 }
 
 .left,
 .right {
-  background-color: #091a28;
+  background-color: #f1e7d0;
   width: auto;
   height: auto;
   text-align: start;
@@ -290,7 +291,7 @@ footer {
 a {
   text-decoration: none;
   font-size: bold;
-  color: #43779e;
+  color: #222222;
 }
 
 ul {
@@ -339,7 +340,7 @@ li {
   border-radius: 5px;
   margin-right: 10px;
   padding: 5px;
-  color: white;
+  color: #222222;
   text-decoration: none;
 }
 /* Tags hover effects */
@@ -354,7 +355,7 @@ li {
 
 /* wraps each post in its own container */
 .postContainer {
-  background-color: #0d2538;
+  background-color: #222222;
   /* background-color: #002b36; */
   border-radius: 10px;
   padding: 20px;
@@ -384,7 +385,7 @@ li {
 /* Read More Box Style */
 .readMore {
   margin-top: 25px;
-  background-color: #091a28;
+  background-color: #f1e7d0;
   width: 100px;
   padding: 5px;
   border-radius: 10px;
@@ -393,6 +394,7 @@ li {
   font-weight: bold;
   margin-top: 30px;
   border: 2px solid #0d2538;
+  color: #222222;
 }
 
 /* Read More Rover */

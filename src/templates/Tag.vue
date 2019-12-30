@@ -3,7 +3,7 @@
     <div class="backButton">
       <a href="javascript:history.go(-1)" class="button">↩</a>
     </div>
-    <h1 style="color: white">Posts tagged #{{ $page.tag.title }}</h1>
+    <h1 style="color: #222222">Posts tagged #{{ $page.tag.title }}</h1>
     <article v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id">
       <div class="postContainer">
         <g-image :src="edge.node.cover_image" style="width: 100% ; padding-top: 15px;"></g-image>
@@ -14,14 +14,14 @@
         <div class="div1">
           <g-link
             class="span"
-            style="padding: .5em ; background-color: #091A28"
+            style="padding: .5em ; background-color: #f1e7d0"
             v-for="tag in edge.node.tags"
             :to="tag.path"
             :key="tag.id"
           >{{ tag.id }}</g-link>
           <br />
           <div class="readMore">
-            <g-link :to="edge.node.path" class="gLinkPost">Read More</g-link>
+            <g-link :to="edge.node.path" class="gLinkPost" style="color: #222222">Read More</g-link>
           </div>
         </div>
       </div>

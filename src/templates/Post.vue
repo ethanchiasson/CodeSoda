@@ -90,7 +90,7 @@
               <div class="clear">
                 <input
                   type="submit"
-                  value="Stay Updated"
+                  value="Subscribe"
                   name="subscribe"
                   id="mc-embedded-subscribe"
                   class="button"
@@ -165,6 +165,32 @@ query($path: String!) {
 </page-query>
 
 <style>
+/* Start TOC Styles */
+
+h2#table-of-contents {
+  font-size: 24px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.toc {
+  background-color: #222222;
+  width: auto;
+  border-radius: 5px;
+  color: #f1e7d0;
+}
+
+.tocList a {
+  color: #f1e7d0;
+  margin-left: 40px;
+  width: 75%;
+}
+
+.tocList {
+  padding-bottom: 5px;
+}
+/* End TOC Styles */
+
 /* back Button */
 .backButton {
   margin-bottom: 50px;
@@ -212,6 +238,8 @@ query($path: String!) {
  
 */
 /* Article, Spacing, and More */
+
+/* Spacer */
 hr {
   background-color: #2e7eff;
   border-color: #2e7eff;
@@ -232,7 +260,7 @@ li {
 }
 
 .time {
-  color: grey;
+  color: #222222;
 }
 .clap {
   margin-top: 20px;
@@ -243,11 +271,11 @@ code {
   background-color: #222222;
   padding: 4px;
   border-radius: 4px;
-  color: antiquewhite;
+  color: #f1e7d0;
 }
 
 em {
-  color: antiquewhite;
+  color: #f1e7d0;
   padding: 2px;
   border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
   background: linear-gradient(
@@ -331,7 +359,7 @@ span.token.keyword {
 
 span.token.operator {
   color: #1ee63f;
-  background-color: #002b36;
+  background-color: #222222;
   text-shadow: none;
   font-size: 16px;
   font-weight: bold;
@@ -402,12 +430,12 @@ code.language-cs {
 */
 /* Start Afilliate Banner Styles */
 .affiliateSub {
-  color: #43779e;
+  color: #222222;
 }
 .affiliateBanner {
   width: 100%;
   height: 150px;
-  background-color: #002b36;
+  background-color: #222222;
   margin-bottom: 20px;
   margin-top: 20px;
   border-radius: 10px;
@@ -429,7 +457,7 @@ code.language-cs {
   text-align: center;
   margin: auto;
   margin-bottom: 20px;
-  color: #43779e;
+  color: #f1e7d0;
   font-size: 1rem;
   font-weight: bold;
 }
@@ -443,7 +471,7 @@ code.language-cs {
 
 .newsletterContainer {
   width: 100%;
-  background-color: #0d2538;
+  background-color: #222222;
   border-radius: 0px;
   padding-top: 15px;
   border-top: 4px solid red;
@@ -465,23 +493,23 @@ code.language-cs {
 }
 
 #mce-EMAIL {
-  background-color: #091a28;
-  border: #43779e 2px solid;
+  background-color: #f1e7d0;
+  border: #f1e7d0 2px solid;
   border-radius: 5px;
-  color: white;
+  color: #222222;
   padding: 5px;
   font-size: 1rem;
   width: 75%;
 }
 
 #mc-embedded-subscribe {
-  color: white;
+  color: #222222;
   padding: 5px;
   font-size: 1rem;
   font-weight: bold;
   width: 100px;
-  background-color: #091a28;
-  border: #43779e 2px solid;
+  background-color: #f1e7d0;
+  border: #f1e7d0 2px solid;
   border-radius: 5px;
   margin-top: 15px;
   cursor: pointer;
@@ -495,7 +523,7 @@ code.language-cs {
   font-weight: bold;
   width: 40%;
   background: linear-gradient(45deg, #2e7eff, rgb(231, 50, 255));
-  border: #091a28 2px solid;
+  border: #f1e7d0 2px solid;
   border-radius: 5px;
   margin-top: 15px;
   cursor: pointer;
