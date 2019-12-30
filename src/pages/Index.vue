@@ -36,14 +36,14 @@
             <div class="tagContainer">
               <g-link
                 class="span"
-                style="padding: .5em ; background-color: #091A28"
+                style="padding: .5em ; background-color: #F1E7D0"
                 v-for="tag in edge.node.tags"
                 :to="tag.path"
                 :key="tag.id"
               >{{ tag.id }}</g-link>
               <br />
               <div class="readMore">
-                <g-link :to="edge.node.path" class="gLinkPost" style="color: white">Read More</g-link>
+                <g-link :to="edge.node.path" class="gLinkPost" style="color: #222222;">Read More</g-link>
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@
               <div class="clear">
                 <input
                   type="submit"
-                  value="Stay Updated"
+                  value="Subscribe"
                   name="subscribe"
                   id="mc-embedded-subscribe"
                   class="button"
@@ -128,7 +128,7 @@
       </div>
       <!--newsletter container-->
       <div class="footerContainer">
-        <div class="left">
+        <div class="right">
           <p class="aboutFooter">
             WebSoda.io is maintained by Ethan Chiasson and small team.
             <br />We aim to provide users with high quality content related to
@@ -137,7 +137,7 @@
             things web development.
           </p>
         </div>
-        <div class="right">
+        <div class="left">
           <ul>
             <li>
               <a href>Contact</a>
@@ -208,11 +208,13 @@ export default {
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: -20px;
+  color: #222222;
 }
 .subtitle1 {
   background: -webkit-linear-gradient(#2e7eff, rgb(231, 50, 255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
 }
 /* Start of bubble animation */
 .bubbles {
@@ -364,9 +366,7 @@ export default {
 
 .titles {
   font-size: 2rem;
-  background: -webkit-linear-gradient(#2e7eff, rgb(231, 50, 255));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #222222;
 }
 
 p2 {
@@ -379,7 +379,7 @@ span.titles {
 }
 
 .postContainer {
-  background-color: #0d2538;
+  background-color: #222222;
   /* background-color: #002b36; */
   border-radius: 10px;
   padding: 20px;
@@ -390,7 +390,7 @@ span.titles {
 .divider {
   margin-top: 20px;
   margin-bottom: 10px;
-  width: 70%;
+  width: 100%;
   background: -webkit-linear-gradient(135deg, #2e7eff, rgb(231, 50, 255));
   height: 5px;
   border-radius: 5px;
@@ -409,7 +409,7 @@ span.titles {
 /* Read More Box Style */
 .readMore {
   margin-top: 25px;
-  background-color: #091a28;
+  background-color: #f1e7d0;
   width: 100px;
   padding: 5px;
   border-radius: 10px;
@@ -418,6 +418,7 @@ span.titles {
   font-weight: bold;
   margin-top: 30px;
   border: 2px solid #0d2538;
+  color: #222222;
 }
 
 /* Read More Rover */
@@ -449,7 +450,7 @@ article {
   border-radius: 5px;
   margin-right: 10px;
   padding: 5px;
-  color: white;
+  color: #222222;
   text-decoration: none;
 }
 /* Tags hover effects */
@@ -468,11 +469,12 @@ footer {
 
 /* News Letter Styles */
 .newsletterSubtitle {
-  width: 80%;
+  width: 90%;
   text-align: center;
   margin: auto;
   margin-bottom: 30px;
-  color: #43779e;
+  /* color: #43779e; */
+  color: white;
   font-size: 1rem;
 }
 
@@ -485,7 +487,7 @@ footer {
 
 .newsletterContainer {
   width: 100%;
-  background-color: #0d2538;
+  background-color: #222222;
   border-radius: 0px;
   padding-top: 15px;
   border-top: 4px solid red;
@@ -507,23 +509,23 @@ footer {
 }
 
 #mce-EMAIL {
-  background-color: #091a28;
-  border: #43779e 2px solid;
+  background-color: #f1e7d0;
+  border: antiquewhite 2px solid;
   border-radius: 5px;
-  color: white;
+  color: #222222;
   padding: 5px;
   font-size: 1rem;
   width: 75%;
 }
 
 #mc-embedded-subscribe {
-  color: white;
+  color: #222222;
   padding: 5px;
   font-size: 1rem;
   font-weight: bold;
   width: 100px;
-  background-color: #091a28;
-  border: #43779e 2px solid;
+  background-color: #f1e7d0;
+  border: antiquewhite 2px solid;
   border-radius: 5px;
   margin-top: 15px;
   cursor: pointer;
@@ -537,7 +539,7 @@ footer {
   font-weight: bold;
   width: 40%;
   background: linear-gradient(45deg, #2e7eff, rgb(231, 50, 255));
-  border: #091a28 2px solid;
+  border: #222222 2px solid;
   border-radius: 5px;
   margin-top: 15px;
   cursor: pointer;
@@ -548,19 +550,19 @@ footer {
 /* Footer Styles */
 .footerContainer {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 100px;
 }
 
 .aboutFooter {
   text-decoration: none;
   font-size: bold;
-  color: #43779e;
+  color: #222222;
 }
 
 .left,
 .right {
-  background-color: #091a28;
+  background-color: #f1e7d0;
   width: auto;
   height: auto;
   text-align: start;
@@ -578,7 +580,7 @@ footer {
 a {
   text-decoration: none;
   font-size: bold;
-  color: #43779e;
+  color: #222222;
 }
 
 ul {
@@ -587,5 +589,6 @@ ul {
 
 li {
   padding-top: 5px;
+  margin-left: -55%;
 }
 </style>

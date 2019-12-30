@@ -2,19 +2,23 @@
   <div class="layout">
     <header class="header">
       <strong>
-        <!-- This exact keyword stops the index/home
-        always showing as an active-->
-        <g-link exact to="/" class="siteName">
-          <!-- {{
-          $static.metaData.siteName
-          }}-->
+        <div class="sitelogo">
+          <!-- This exact keyword stops the index/home
+          always showing as an active-->
           <g-image class="logo" alt="Logo" src="~/assets/images/soda.png" height="40" width="40" />
-        </g-link>
-        <!-- <g-image class="logo" alt="Logo" src="~/assets/images/soda.png" height="40" width="40" /> -->
+          <span>
+            <g-link exact to="/" class="siteName">
+              {{
+              $static.metaData.siteName
+              }}
+            </g-link>
+          </span>
+          <!-- <g-image class="logo" alt="Logo" src="~/assets/images/soda.png" height="40" width="40" /> -->
+        </div>
       </strong>
       <nav class="nav">
         <g-link exact class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/blog">Articles</g-link>
+        <g-link class="nav__link" to="/articles">Articles</g-link>
         <!-- <g-link class="nav__link" to="/about">Authors</g-link> -->
         <g-link class="nav__link" to="/courses">Courses</g-link>
       </nav>
@@ -53,7 +57,7 @@ body {
 }
 
 .body {
-  background: #091a28;
+  background: #f1e7d0;
   /*#091a28  */
   /* #002b36 */
   /* overflow-x: hidden; */
@@ -99,7 +103,7 @@ body {
   padding-bottom: 5px;
   padding-left: 5px;
   padding-right: 5px;
-  color: white;
+  color: #222222;
 }
 
 /* Changes Site Name Styles */
@@ -147,4 +151,18 @@ body {
 /*  */
 /*  */
 /*  */
+
+.siteLogo {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  float: left;
+}
+
+.siteName {
+  float: right;
+  line-height: 80px;
+  color: #222222;
+}
 </style>

@@ -1,12 +1,12 @@
 <template>
   <!-- need to add that layout to make sure we get nav -->
   <layout>
-    <h1 style="color: white ;">Articles</h1>
+    <!-- <h1 style="color: #222222 ;">Articles</h1> -->
     <p class="welcome">
       <a class="subtitle">👋 Welcome Fellow Coder!</a>
       <br />
       <br />Search through our collection of articles by awesome
-      developers like you.
+      developers just like you.
       <!-- <br />Interested in becoming a curated author ?
       <a href="Google.com" class="newAuthorLink">Click Here</a>-->
     </p>
@@ -419,7 +419,7 @@ article {
   letter-spacing: 0.5px;
   padding: 40px 20px;
   border: none;
-  color: white;
+  color: #222222;
   text-decoration: none;
 }
 

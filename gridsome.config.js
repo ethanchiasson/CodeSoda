@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: "websoda.io",
+  siteName: "WebSoda.io",
   siteDescription:
     "A Publication with Refreshing Content on Everything Web development.",
   plugins: [
@@ -27,7 +27,7 @@ module.exports = {
       options: {
         typeName: "Post",
         path: "content/posts/**/*.md",
-        route: "/posts/:slug",
+        route: "/articles/:slug",
         refs: {
           // Create a Tag content type and its nodes automatically.
           tags: {

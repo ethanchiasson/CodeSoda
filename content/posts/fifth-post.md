@@ -8,8 +8,6 @@ tags: ["Vue", "Javascript", "Typescript"]
 cover_image: "./images/bg2.jpg"
 ---
 
-Let me start by saying that this tutorial will be using XHR. It is common knowledge that when working with APIs ,fetch is the go to method ( depending on who you ask of course ). Furthermore, in hopes of keeping the tutorial light on JavaScript ( as it can get complex ) , we will be making 3 separate calls to 3 different api URLs. We could build a function to get all 3 URLs and load them dynamically, but we won’t go that in depth, because this tutorial is focused on building a chrome extension.
-
 # _</>_ The Setup
 
 Before we start, I am assuming you know how to create a folder for your project, open it in your editor, and create a simple HTML boiler plate. Once you are ready, keep reading
@@ -37,6 +35,8 @@ Save your project files and open up a a Chrome browser and navigate to the menu 
 
 Once you are on the extension page, click the “Load unpacked” button located at the top of the page. If you can not find this button, make sure you enable developer mode ( which can be done by clicking the toggle button at the top of the same page). Find your project folder and select it. Once you selected the folder, the working chrome extension should be displayed next to your other extension, assuming you followed the steps correctly. If you recieve any errors at this point, double check your code or search for the error. Google can be your friend.
 
+<a name="gettingourdata"></a>
+
 # _</>_ Getting our Data
 
 Graduations.... I guess. I mean, let’s be honest, our extension ( in its current state ) kinda sucks. A chrome extension is nothing much unless we add some real world functionality to it, so let’s get started.
@@ -59,9 +59,11 @@ Now that we have our manifest.json working and our api setup and providing our p
 
 All that is left to do is ...
 
-1. Build a HTML template for how we want our data to appear
-2. Display our data without our HTML elements
-3. Style our extension ( because UI is very important )
+     1. Build a HTML template for how we want our data to appear
+
+     2. Display our data without our HTML elements
+
+     3. Style our extension ( because UI is very important )
 
 ## _#_ Building our HTML
 

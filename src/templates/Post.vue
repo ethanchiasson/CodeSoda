@@ -3,7 +3,7 @@
     <div class="backButton">
       <a href="javascript:history.go(-1)" class="button">↩</a>
     </div>
-    <h1 v-html="$page.post.title" style="text-align: center"></h1>
+    <h1 v-html="$page.post.title" style="text-align: center ; color: #433422"></h1>
     <!-- <g-image :src="$page.post.cover_image" style="margin: 0 auto"></g-image> -->
     <div class="divider"></div>
     <div class="headerContainer" style="overflow: hidden;">
@@ -18,15 +18,17 @@
           v-html="$page.post.date"
         ></p>
       </div>
-      <div class="clap" style="overflow: hidden; float: right; padding: 2px;">
+      <div class="clap" style="overflow: hidden; float: right; padding: 15px;">
         <div class="time" style="float:left; margin-right: 250px;">
           <div class="timeToRead" style="overflow: hidden; margin-top: 20px;">
             <p style="float: left;" v-html="$page.post.timeToRead"></p>
             <p style="float: right;">minute read</p>
           </div>
         </div>
+        <!-- old applause color -->
+        <!-- color="#2e7eff"  -->
         <applause-button
-          color="#2e7eff"
+          color="#222222"
           style="width: 50px; height: 50px; margin-top: 20px; float: right;"
         />
       </div>
@@ -163,10 +165,264 @@ query($path: String!) {
 </page-query>
 
 <style>
-footer {
-  margin-top: 75px;
+/* back Button */
+.backButton {
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
+.button {
+  /* background-color: #0d2538; */
+  background-color: #222222;
+  border: #002b36;
+  color: white;
+  width: 120px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #002b36;
+  border: #002b36;
+  color: white;
+  width: 120px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #2e7eff, rgb(231, 50, 255));
+  text-decoration: none;
+}
+/* End Back Button */
+/* 
+ 
+ 
+ 
+*/
+/* 
+ 
+ 
+ 
+*/
+/* Article, Spacing, and More */
+hr {
+  background-color: #2e7eff;
+  border-color: #2e7eff;
+}
+
+a {
+  text-decoration: none;
+  font-size: bold;
+  color: #43779e;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding-top: 5px;
+}
+
+.time {
+  color: grey;
+}
+.clap {
+  margin-top: 20px;
+}
+
+code {
+  /* background-color: #143855; */
+  background-color: #222222;
+  padding: 4px;
+  border-radius: 4px;
+  color: antiquewhite;
+}
+
+em {
+  color: antiquewhite;
+  padding: 2px;
+  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+  background: linear-gradient(
+    127deg,
+    rgba(231, 50, 255, 0.8),
+    rgb(1, 69, 255) 70.71%
+  );
+}
+
+body {
+  color: white;
+}
+
+pre.language-js {
+  /* background-color: #0d2538; */
+  background-color: #222222;
+  text-shadow: none;
+  /* border: 2px solid whitesmoke; */
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  box-shadow: 5px 7px rgb(223, 223, 38);
+}
+
+/*  HTML Code Block Styling */
+pre.language-html {
+  /* background-color: #0d2538; */
+  background-color: #222222;
+  text-shadow: none;
+  /* border: 2px solid whitesmoke; */
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  box-shadow: 5px 7px darkcyan;
+}
+
+/* JSON Code Block Styling */
+pre.language-json {
+  /* background-color: #0d2538; */
+  background-color: #222222;
+  text-shadow: none;
+  /* border: 2px solid whitesmoke; */
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  box-shadow: 5px 7px wheat;
+}
+
+pre.language-css {
+  /* background-color: #0d2538; */
+  background-color: #222222;
+  text-shadow: none;
+  /* border: 2px solid whitesmoke; */
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  box-shadow: 5px 7px plum;
+}
+
+pre.language-cs {
+  /* background-color: #0d2538; */
+  background-color: #222222;
+  text-shadow: none;
+  /* border: 2px solid whitesmoke; */
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  box-shadow: 5px 7px rgb(15, 134, 144);
+}
+
+span.token.keyword {
+  color: #ff3e24;
+  text-shadow: none;
+  font-weight: bolder;
+}
+
+span.token.operator {
+  color: #1ee63f;
+  background-color: #002b36;
+  text-shadow: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+span.token.number {
+  color: #ffeb66;
+  text-shadow: none;
+}
+span.token.string {
+  color: #ffeb66;
+  text-shadow: none;
+}
+
+span {
+  text-shadow: none;
+}
+
+span.token.tag {
+  color: orangered;
+}
+
+code.language-js,
+code.language-json,
+code.language-html,
+code.language-java,
+code.language-cs {
+  text-shadow: none;
+  color: white;
+}
+
+.author {
+  margin-top: -15px;
+  color: #433422;
+}
+
+.timeToRead {
+  width: 100px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+.timeToRead {
+  font-size: 1rem;
+  color: #433422;
+}
+
+.posttext {
+  font-size: 1.15rem;
+  color: #433422;
+}
+
+.divider {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  background: linear-gradient(135deg, #2e7eff, rgb(231, 50, 255));
+  height: 5px;
+  border-radius: 5px;
+}
+/* 
+ 
+ 
+ 
+*/
+/* 
+ 
+ 
+ 
+*/
+/* Start Afilliate Banner Styles */
+.affiliateSub {
+  color: #43779e;
+}
+.affiliateBanner {
+  width: 100%;
+  height: 150px;
+  background-color: #002b36;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+/* End Afilliate Banner Styles */
+/* 
+ 
+ 
+ 
+*/
+/* 
+ 
+ 
+ 
+*/
 /* News Letter Styles */
 .newsletterSubtitle {
   width: 80%;
@@ -244,10 +500,22 @@ footer {
   margin-top: 15px;
   cursor: pointer;
 }
-
 /* End News Letter Styles */
-
+/* 
+ 
+ 
+ 
+*/
+/* 
+ 
+ 
+ 
+*/
 /* Footer Styles */
+footer {
+  margin-top: 75px;
+}
+
 .footerContainer {
   width: 100%;
   margin-top: 50px;
@@ -257,12 +525,14 @@ footer {
 .aboutFooter {
   text-decoration: none;
   font-size: bold;
-  color: #43779e;
+  /* color: #43779e; */
+  color: #222222;
 }
 
 .left,
 .right {
-  background-color: #091a28;
+  /* background-color: #091a28; */
+  background-color: #f1e7d0;
   width: auto;
   height: auto;
   text-align: start;
@@ -276,39 +546,17 @@ footer {
   float: right;
 }
 /* End Footer Styles */
-
-a {
-  text-decoration: none;
-  font-size: bold;
-  color: #43779e;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  padding-top: 5px;
-}
-
-.affiliateSub {
-  color: #43779e;
-}
-.affiliateBanner {
-  width: 100%;
-  height: 150px;
-  background-color: #002b36;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  border-radius: 10px;
-}
-
-.time {
-  color: grey;
-}
-.clap {
-  margin-top: 35px;
-}
+/* 
+ 
+ 
+ 
+*/
+/* 
+ 
+ 
+ 
+*/
+/* Start Applause button */
 applause-button {
   position: relative;
   cursor: pointer;
@@ -376,7 +624,7 @@ applause-button .count-container {
   position: absolute;
   top: -55%;
   width: 100%;
-  color: white;
+  color: #222222;
   user-select: none;
 }
 applause-button .count-container .count {
@@ -485,179 +733,5 @@ applause-button.clap .count {
     transform: translateY(0);
   }
 }
-
-code {
-  background-color: #143855;
-  padding: 4px;
-  border-radius: 4px;
-}
-em {
-  color: white;
-  padding: 2px;
-  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
-  background: linear-gradient(
-    127deg,
-    rgba(231, 50, 255, 0.8),
-    rgb(1, 69, 255) 70.71%
-  );
-}
-
-body {
-  color: white;
-}
-
-pre.language-js {
-  background-color: #0d2538;
-  text-shadow: none;
-  /* border: 2px solid whitesmoke; */
-  border-radius: 15px;
-  margin: 0 auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  box-shadow: 5px 7px rgb(223, 223, 38);
-}
-
-/*  HTML Code Block Styling */
-pre.language-html {
-  background-color: #0d2538;
-  text-shadow: none;
-  /* border: 2px solid whitesmoke; */
-  border-radius: 15px;
-  margin: 0 auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  box-shadow: 5px 7px darkcyan;
-}
-
-/* JSON Code Block Styling */
-pre.language-json {
-  background-color: #0d2538;
-  text-shadow: none;
-  /* border: 2px solid whitesmoke; */
-  border-radius: 15px;
-  margin: 0 auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  box-shadow: 5px 7px wheat;
-}
-
-pre.language-css {
-  background-color: #0d2538;
-  text-shadow: none;
-  /* border: 2px solid whitesmoke; */
-  border-radius: 15px;
-  margin: 0 auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  box-shadow: 5px 7px plum;
-}
-
-pre.language-cs {
-  background-color: #0d2538;
-  text-shadow: none;
-  /* border: 2px solid whitesmoke; */
-  border-radius: 15px;
-  margin: 0 auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  box-shadow: 5px 7px rgb(15, 134, 144);
-}
-
-span.token.keyword {
-  color: #ff3e24;
-  text-shadow: none;
-  font-weight: bolder;
-}
-
-span.token.operator {
-  color: #1ee63f;
-  background-color: #002b36;
-  text-shadow: none;
-  font-size: 16px;
-  font-weight: bold;
-}
-span.token.number {
-  color: #ffeb66;
-  text-shadow: none;
-}
-span.token.string {
-  color: #ffeb66;
-  text-shadow: none;
-}
-
-span {
-  text-shadow: none;
-}
-
-span.token.tag {
-  color: orangered;
-}
-
-code.language-js,
-code.language-json,
-code.language-html,
-code.language-java,
-code.language-cs {
-  text-shadow: none;
-  color: white;
-}
-
-.author {
-  margin-top: -15px;
-}
-
-.timeToRead {
-  width: 100px;
-  margin-top: -20px;
-  margin-bottom: 20px;
-}
-.timeToRead {
-  font-size: 1rem;
-}
-
-.posttext {
-  font-size: 1.1rem;
-}
-
-.divider {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  width: 100%;
-  background: linear-gradient(135deg, #2e7eff, rgb(231, 50, 255));
-  height: 5px;
-  border-radius: 5px;
-}
-
-.button {
-  background-color: #0d2538;
-  border: #002b36;
-  color: white;
-  width: 120px;
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.button:hover {
-  background-color: #002b36;
-  border: #002b36;
-  color: white;
-  width: 120px;
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  background: linear-gradient(135deg, #2e7eff, rgb(231, 50, 255));
-  text-decoration: none;
-}
-
-.backButton {
-  margin-bottom: 20px;
-}
+/* End Applause button */
 </style>
