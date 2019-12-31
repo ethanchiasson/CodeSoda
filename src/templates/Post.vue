@@ -285,9 +285,6 @@ em {
   );
 }
 
-body {
-  color: white;
-}
 
 pre.language-js {
   /* background-color: #0d2538; */

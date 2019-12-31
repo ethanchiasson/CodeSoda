@@ -1,10 +1,10 @@
 <template>
   <Layout>
     <div class="container">
-      <h1 style="text-align: center ; color: white">🙁 Sorry, that page does not exist</h1>
+      <h1 style="text-align: center ; color: #222222">🙁 Sorry, that page does not exist</h1>
       <div class="read">
         <p
-          style="text-align: center ; color: white"
+          style="text-align: center ; color: #222222"
         >Looking for refreshing articles on all things web development?</p>
         <button
           style="text-align: center ;"
@@ -18,13 +18,13 @@
 
 <style>
 button {
-  color: white;
+  color: #222222;
   padding: 5px;
   font-size: 1rem;
   font-weight: bold;
   width: 100px;
-  background-color: #091a28;
-  border: #43779e 2px solid;
+  background-color: #f1e7d0;
+  border: #222222 2px solid;
   border-radius: 5px;
   margin-top: 15px;
   cursor: pointer;
@@ -38,7 +38,7 @@ button:hover {
   font-weight: bold;
   width: 40%;
   background: linear-gradient(45deg, #2e7eff, rgb(231, 50, 255));
-  border: #091a28 2px solid;
+  border: #222222 2px solid;
   border-radius: 5px;
   margin-top: 15px;
   cursor: pointer;
