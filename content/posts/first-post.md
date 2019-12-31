@@ -1,5 +1,5 @@
 ---
-title: First Post
+title: How to Deploy your next project on Netlify
 author: Ethan Chiasson
 image: "./images/ethan.png"
 excerpt: "Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis."

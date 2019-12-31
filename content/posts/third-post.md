@@ -1,6 +1,6 @@
 ---
 title: Using and Customizing PrismJS in Gridsome
-author: Emily Skinner
+author: Ethan Chiasson
 image: "./images/ethan.png"
 excerpt: "Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis."
 date: 2019-12-10
