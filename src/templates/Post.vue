@@ -3,7 +3,7 @@
     <div class="backButton">
       <a href="javascript:history.go(-1)" class="button">↩</a>
     </div>
-    <h1 v-html="$page.post.title" style="text-align: center ; color: #433422"></h1>
+    <h1 v-html="$page.post.title" style="text-align: center ; color: white"></h1>
     <!-- <g-image :src="$page.post.cover_image" style="margin: 0 auto"></g-image> -->
     <div class="divider"></div>
     <div class="headerContainer" style="overflow: hidden;">
@@ -28,7 +28,7 @@
         <!-- old applause color -->
         <!-- color="#2e7eff"  -->
         <applause-button
-          color="#222222"
+          color="white"
           style="width: 50px; height: 50px; margin-top: 20px; float: right;"
         />
       </div>
@@ -104,9 +104,13 @@
       <!--newsletter container-->
       <div class="footerContainer">
         <div class="left">
-          <p
-            class="aboutFooter"
-          >WebSoda.io is maintained by Ethan Chiasson and small team. We aim to provide users with high quality content related to programming, front-end development & design, and all things web development.</p>
+          <p class="aboutFooter">
+            WebSoda.io is maintained by Ethan Chiasson and small team.
+            <br />We aim to provide users with high quality content related to
+            <br />programming, front-end development & design,
+            <br />and all
+            things web development.
+          </p>
         </div>
         <div class="right">
           <ul>
@@ -174,14 +178,14 @@ h2#table-of-contents {
 }
 
 .toc {
-  background-color: #222222;
+  background-color: #112d43;
   width: auto;
   border-radius: 5px;
-  color: #f1e7d0;
+  color: white;
 }
 
 .tocList a {
-  color: #f1e7d0;
+  color: white;
   margin-left: 40px;
   width: 75%;
 }
@@ -199,7 +203,7 @@ h2#table-of-contents {
 
 .button {
   /* background-color: #0d2538; */
-  background-color: #222222;
+  background-color: #091a28;
   border: #002b36;
   color: white;
   width: 120px;
@@ -248,7 +252,7 @@ hr {
 a {
   text-decoration: none;
   font-size: bold;
-  color: #43779e;
+  color: white;
 }
 
 ul {
@@ -260,7 +264,7 @@ li {
 }
 
 .time {
-  color: #222222;
+  color: white;
 }
 .clap {
   margin-top: 20px;
@@ -268,10 +272,10 @@ li {
 
 code {
   /* background-color: #143855; */
-  background-color: #222222;
+  background-color: #112d43;
   padding: 4px;
   border-radius: 4px;
-  color: #f1e7d0;
+  color: white;
 }
 
 em {
@@ -285,10 +289,9 @@ em {
   );
 }
 
-
 pre.language-js {
   /* background-color: #0d2538; */
-  background-color: #222222;
+  background-color: #112d43;
   text-shadow: none;
   /* border: 2px solid whitesmoke; */
   border-radius: 15px;
@@ -301,7 +304,7 @@ pre.language-js {
 /*  HTML Code Block Styling */
 pre.language-html {
   /* background-color: #0d2538; */
-  background-color: #222222;
+  background-color: #112d43;
   text-shadow: none;
   /* border: 2px solid whitesmoke; */
   border-radius: 15px;
@@ -314,7 +317,7 @@ pre.language-html {
 /* JSON Code Block Styling */
 pre.language-json {
   /* background-color: #0d2538; */
-  background-color: #222222;
+  background-color: #112d43;
   text-shadow: none;
   /* border: 2px solid whitesmoke; */
   border-radius: 15px;
@@ -326,7 +329,7 @@ pre.language-json {
 
 pre.language-css {
   /* background-color: #0d2538; */
-  background-color: #222222;
+  background-color: #112d43;
   text-shadow: none;
   /* border: 2px solid whitesmoke; */
   border-radius: 15px;
@@ -338,7 +341,7 @@ pre.language-css {
 
 pre.language-cs {
   /* background-color: #0d2538; */
-  background-color: #222222;
+  background-color: #112d43;
   text-shadow: none;
   /* border: 2px solid whitesmoke; */
   border-radius: 15px;
@@ -389,7 +392,7 @@ code.language-cs {
 
 .author {
   margin-top: -15px;
-  color: #433422;
+  color: white;
 }
 
 .timeToRead {
@@ -399,12 +402,12 @@ code.language-cs {
 }
 .timeToRead {
   font-size: 1rem;
-  color: #433422;
+  color: white;
 }
 
 .posttext {
   font-size: 1.15rem;
-  color: #433422;
+  color: white;
 }
 
 .divider {
@@ -427,20 +430,18 @@ code.language-cs {
 */
 /* Start Afilliate Banner Styles */
 .affiliateSub {
-  color: #222222;
+  color: white;
 }
 .affiliateBanner {
   width: 100%;
   height: 150px;
-  background-color: #222222;
+  background-color: #112d43;
   margin-bottom: 20px;
   margin-top: 20px;
   border-radius: 10px;
 }
 /* End Afilliate Banner Styles */
 /* 
- 
- 
  
 */
 /* 
@@ -468,7 +469,7 @@ code.language-cs {
 
 .newsletterContainer {
   width: 100%;
-  background-color: #222222;
+  background-color: #112d43;
   border-radius: 0px;
   padding-top: 15px;
   border-top: 4px solid red;
@@ -490,10 +491,10 @@ code.language-cs {
 }
 
 #mce-EMAIL {
-  background-color: #f1e7d0;
-  border: #f1e7d0 2px solid;
+  background-color: #091a28;
+  border: #091a28 2px solid;
   border-radius: 5px;
-  color: #222222;
+  color: white;
   padding: 5px;
   font-size: 1rem;
   width: 75%;
@@ -505,8 +506,8 @@ code.language-cs {
   font-size: 1rem;
   font-weight: bold;
   width: 100px;
-  background-color: #f1e7d0;
-  border: #f1e7d0 2px solid;
+  background-color: white;
+  border: white 2px solid;
   border-radius: 5px;
   margin-top: 15px;
   cursor: pointer;
@@ -520,7 +521,7 @@ code.language-cs {
   font-weight: bold;
   width: 40%;
   background: linear-gradient(45deg, #2e7eff, rgb(231, 50, 255));
-  border: #f1e7d0 2px solid;
+  border: #222222 2px solid;
   border-radius: 5px;
   margin-top: 15px;
   cursor: pointer;
@@ -551,13 +552,13 @@ footer {
   text-decoration: none;
   font-size: bold;
   /* color: #43779e; */
-  color: #222222;
+  color: white;
 }
 
 .left,
 .right {
   /* background-color: #091a28; */
-  background-color: #f1e7d0;
+  background-color: #091a28;
   width: auto;
   height: auto;
   text-align: start;
@@ -569,6 +570,10 @@ footer {
 
 .right {
   float: right;
+}
+
+.footerContainer a {
+  color: white;
 }
 /* End Footer Styles */
 /* 
@@ -649,7 +654,7 @@ applause-button .count-container {
   position: absolute;
   top: -55%;
   width: 100%;
-  color: #222222;
+  color: white;
   user-select: none;
 }
 applause-button .count-container .count {

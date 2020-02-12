@@ -26,14 +26,14 @@
         <div class="tagContainer">
           <g-link
             class="span"
-            style="padding: .5em ; background-color: #f1e7d0;"
+            style="padding: .5em ; background-color: #091a28;"
             v-for="tag in edge.node.tags"
             :to="tag.path"
             :key="tag.id"
           >{{ tag.id }}</g-link>
           <br />
           <div class="readMore">
-            <g-link :to="edge.node.path" class="gLinkPost" style="color: #222222">Read More</g-link>
+            <g-link :to="edge.node.path" class="gLinkPost" style="color: white">Read More</g-link>
           </div>
         </div>
       </div>
@@ -197,8 +197,7 @@ footer {
 
 .newsletterContainer {
   width: 100%;
-  /* background-color: #0d2538; */
-  background-color: #222222;
+  background-color: #112d43;
   border-radius: 0px;
   padding-top: 15px;
   border-top: 4px solid red;
@@ -220,10 +219,10 @@ footer {
 }
 
 #mce-EMAIL {
-  background-color: #f1e7d0;
-  border: #222222 2px solid;
+  background-color: #091a28;
+  border: #091a28 2px solid;
   border-radius: 5px;
-  color: #222222;
+  color: white;
   padding: 5px;
   font-size: 1rem;
   width: 75%;
@@ -235,8 +234,8 @@ footer {
   font-size: 1rem;
   font-weight: bold;
   width: 100px;
-  background-color: #f1e7d0;
-  border: #222222 2px solid;
+  background-color: white;
+  border: white 2px solid;
   border-radius: 5px;
   margin-top: 15px;
   cursor: pointer;
@@ -250,7 +249,7 @@ footer {
   font-weight: bold;
   width: 40%;
   background: linear-gradient(45deg, #2e7eff, rgb(231, 50, 255));
-  border: #091a28 2px solid;
+  border: #222222 2px solid;
   border-radius: 5px;
   margin-top: 15px;
   cursor: pointer;
@@ -268,12 +267,12 @@ footer {
 .aboutFooter {
   text-decoration: none;
   font-size: bold;
-  color: #222222;
+  color: white;
 }
 
 .left,
 .right {
-  background-color: #f1e7d0;
+  background-color: #091a28;
   width: auto;
   height: auto;
   text-align: start;
@@ -291,7 +290,7 @@ footer {
 a {
   text-decoration: none;
   font-size: bold;
-  color: #222222;
+  color: white;
 }
 
 ul {
@@ -319,7 +318,7 @@ li {
 }
 
 .welcome {
-  background-color: #002b36;
+  background-color: #112d43;
   padding: 10px;
   border-radius: 10px;
   color: white;
@@ -340,7 +339,7 @@ li {
   border-radius: 5px;
   margin-right: 10px;
   padding: 5px;
-  color: #222222;
+  color: white;
   text-decoration: none;
 }
 /* Tags hover effects */
@@ -355,7 +354,7 @@ li {
 
 /* wraps each post in its own container */
 .postContainer {
-  background-color: #222222;
+  background-color: #112d43;
   /* background-color: #002b36; */
   border-radius: 10px;
   padding: 20px;
@@ -385,7 +384,7 @@ li {
 /* Read More Box Style */
 .readMore {
   margin-top: 25px;
-  background-color: #f1e7d0;
+  background-color: #091a28;
   width: 100px;
   padding: 5px;
   border-radius: 10px;
@@ -393,8 +392,8 @@ li {
   text-decoration: none;
   font-weight: bold;
   margin-top: 30px;
-  border: 2px solid #0d2538;
-  color: #222222;
+  border: 2px solid #091a28;
+  color: white;
 }
 
 /* Read More Rover */
@@ -407,7 +406,7 @@ li {
   text-align: center;
   text-decoration: none;
   margin-top: 30px;
-  border: 2px solid #0d2538;
+  border: 2px solid #091a28;
 }
 
 /* Changes text Color for Post Container / content */
@@ -421,7 +420,7 @@ article {
   letter-spacing: 0.5px;
   padding: 40px 20px;
   border: none;
-  color: #222222;
+  color: white;
   text-decoration: none;
 }
 

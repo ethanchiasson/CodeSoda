@@ -57,9 +57,7 @@ body {
 }
 
 .body {
-  background: #f1e7d0;
-  /*#091a28  */
-  /* #002b36 */
+  background: #091a28;
   /* overflow-x: hidden; */
 }
 
@@ -103,7 +101,7 @@ body {
   padding-bottom: 5px;
   padding-left: 5px;
   padding-right: 5px;
-  color: #222222;
+  color: white;
 }
 
 /* Changes Site Name Styles */
@@ -163,6 +161,6 @@ body {
 .siteName {
   float: right;
   line-height: 80px;
-  color: #222222;
+  color: white;
 }
 </style>
