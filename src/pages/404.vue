@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="container">
-      <h1 style="text-align: center ; color: #222222">🙁 Sorry, that page does not exist</h1>
+      <h1 style="text-align: center ; color: #222222">🙁 Sorry, that page does not exist!!!</h1>
       <div class="read">
         <p
           style="text-align: center ; color: #222222"
