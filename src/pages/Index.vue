@@ -6,11 +6,14 @@
         <div class="bubble"></div>
         <div class="bubble"></div>
         <!-- <g-image class="logo" alt="Logo" src="~/assets/images/soda.png" height="80" width="80" /> -->
-        <h1 style="text-align: center" class="subtitle1">Refreshing Content From Real Developers</h1>
+        <h1
+          style="text-align: center"
+          class="subtitle1"
+        >Refreshing Content From Trust Crypto Enthusiast</h1>
         <p
           style="text-align: center"
           class="subtitle2"
-        >Front-end to Backend, Angular to React, we discus it all...</p>
+        >Bitcoin to Alt-coins, ICOs & Scams, we discuss it all</p>
         <div class="bubble"></div>
         <div class="bubble"></div>
         <div class="bubble"></div>
@@ -36,7 +39,7 @@
             <div class="tagContainer">
               <g-link
                 class="span"
-                style="padding: .5em ; background-color: #091a28"
+                style="padding: .5em ; background-color: #1a1a1a"
                 v-for="tag in edge.node.tags"
                 :to="tag.path"
                 :key="tag.id"
@@ -230,100 +233,112 @@ export default {
 .bubble {
   position: relative;
   bottom: 0;
-  background: #2e7eff;
+  /* background: #2e7eff; */
   border-radius: 50%;
   opacity: 0.5;
   animation: flying 10s infinite ease-in;
 }
 
 .bubble:nth-child(1) {
-  width: 20px;
-  height: 20px;
+  width: 32px;
+  height: 32px;
   left: 10%;
   animation-duration: 8s;
+  background-image: url("../assets/images/btc.png");
 }
 
 .bubble:nth-child(2) {
-  width: 10px;
-  height: 10px;
+  width: 32px;
+  height: 32px;
   left: 20%;
   animation-duration: 5s;
+  background-image: url("../assets/images/ltc.png");
 }
 
 .bubble:nth-child(3) {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   left: 35%;
   animation-duration: 10s;
   animation-delay: 0s;
+  background-image: url("../assets/images/eth.png");
 }
 
 .bubble:nth-child(4) {
-  width: 55px;
-  height: 55px;
+  width: 32px;
+  height: 32px;
   left: 50%;
   animation-duration: 6s;
   animation-delay: 0s;
+  background-image: url("../assets/images/doge.png");
 }
 
 .bubble:nth-child(5) {
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
   left: 55%;
   animation-duration: 5s;
   animation-delay: 0s;
+  background-image: url("../assets/images/btc.png");
 }
 
 .bubble:nth-child(6) {
-  width: 25px;
-  height: 25px;
+  width: 32px;
+  height: 32px;
   left: 65%;
   animation-duration: 8s;
   animation-delay: 0s;
+  background-image: url("../assets/images/ltc.png");
 }
 
 .bubble:nth-child(7) {
-  width: 25px;
-  height: 25px;
+  width: 32px;
+  height: 32px;
   left: 25%;
   animation-duration: 7s;
   animation-delay: 0s;
+  background-image: url("../assets/images/eth.png");
 }
 .bubble:nth-child(8) {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   left: 80%;
   animation-duration: 6s;
   animation-delay: 0s;
+  background-image: url("../assets/images/doge.png");
 }
 .bubble:nth-child(9) {
-  width: 15px;
-  height: 15px;
+  width: 32px;
+  height: 32px;
   left: 20%;
   animation-duration: 9s;
   animation-delay: 0s;
+  background-image: url("../assets/images/btc.png");
 }
 
 .bubble:nth-child(10) {
-  width: 20px;
-  height: 20px;
+  width: 32px;
+  height: 32px;
   left: 85%;
   animation-duration: 5s;
   animation-delay: 0s;
+  background-image: url("../assets/images/ltc.png");
 }
 .bubble:nth-child(11) {
-  width: 20px;
-  height: 20px;
+  width: 32px;
+  height: 32px;
   right: 65%;
   animation-duration: 5s;
   animation-delay: 0s;
+  background-image: url("../assets/images/btc.png");
 }
 .bubble:nth-child(12) {
-  width: 10px;
-  height: 10px;
+  width: 32px;
+  height: 32px;
   right: 85%;
   animation-duration: 5s;
   animation-delay: 0s;
+  background-image: url("../assets/images/eth.png");
 }
 
 @keyframes flying {
@@ -379,7 +394,7 @@ span.titles {
 }
 
 .postContainer {
-  background-color: #112d43;
+  background-color: #212121;
   /* background-color: #002b36; */
   border-radius: 10px;
   padding: 20px;
@@ -391,7 +406,8 @@ span.titles {
   margin-top: 20px;
   margin-bottom: 10px;
   width: 100%;
-  background: -webkit-linear-gradient(135deg, #2e7eff, rgb(231, 50, 255));
+  background: linear-gradient(45deg, #2e7eff, rgb(231, 50, 255));
+
   height: 5px;
   border-radius: 5px;
 }
@@ -409,7 +425,7 @@ span.titles {
 /* Read More Box Style */
 .readMore {
   margin-top: 25px;
-  background-color: #091a28;
+  background-color: #1a1a1a;
   width: 100px;
   padding: 5px;
   border-radius: 10px;
@@ -417,7 +433,7 @@ span.titles {
   text-decoration: none;
   font-weight: bold;
   margin-top: 30px;
-  border: 2px solid #091a28;
+  border: 2px solid #1a1a1a;
   color: white;
 }
 
@@ -431,7 +447,7 @@ span.titles {
   text-align: center;
   text-decoration: none;
   margin-top: 30px;
-  border: 2px solid #0d2538;
+  border: 2px solid #1a1a1a;
 }
 
 /* Changes text Color for Post Container / content */
@@ -487,7 +503,7 @@ footer {
 
 .newsletterContainer {
   width: 100%;
-  background-color: #112d43;
+  background-color: #212121;
   border-radius: 0px;
   padding-top: 15px;
   border-top: 4px solid red;
@@ -509,8 +525,8 @@ footer {
 }
 
 #mce-EMAIL {
-  background-color: #091a28;
-  border: #091a28 2px solid;
+  background-color: #1a1a1a;
+  border: #1a1a1a 2px solid;
   border-radius: 5px;
   color: white;
   padding: 5px;
@@ -519,7 +535,7 @@ footer {
 }
 
 #mc-embedded-subscribe {
-  color: #222222;
+  color: #1a1a1a;
   padding: 5px;
   font-size: 1rem;
   font-weight: bold;
@@ -539,7 +555,7 @@ footer {
   font-weight: bold;
   width: 40%;
   background: linear-gradient(45deg, #2e7eff, rgb(231, 50, 255));
-  border: #222222 2px solid;
+  border: #1a1a1a 2px solid;
   border-radius: 5px;
   margin-top: 15px;
   cursor: pointer;
@@ -562,7 +578,6 @@ footer {
 
 .left,
 .right {
-  background-color: #091a28;
   width: auto;
   height: auto;
   text-align: start;

@@ -5,9 +5,9 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: "WebSoda.io",
+  siteName: "BloqDaily.io",
   siteDescription:
-    "A Publication with Refreshing Content on Everything Web development.",
+    "A Publication with Refreshing Content on Everything Cryptocurrencies.",
   plugins: [
     {
       use: "@gridsome/source-contentful",
@@ -18,9 +18,9 @@ module.exports = {
         environment: "master",
         typeName: "Contentful",
         routes: {
-          ContentfulProduct: "/product/:slug"
-        }
-      }
+          ContentfulProduct: "/product/:slug",
+        },
+      },
     },
     {
       use: "@gridsome/source-filesystem",
@@ -34,16 +34,16 @@ module.exports = {
             typeName: "Tag",
             route: "/tags/:id",
             // creates this via true
-            create: true
+            create: true,
             // id = name of tag value (i.e #javascript)
-          }
+          },
         },
         // Adding syntax highlighting plugin
         // Also added to main.js
         remark: {
-          plugins: ["@gridsome/remark-prismjs"]
-        }
-      }
-    }
-  ]
+          plugins: ["@gridsome/remark-prismjs"],
+        },
+      },
+    },
+  ],
 };

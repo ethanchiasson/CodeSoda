@@ -1,11 +1,19 @@
 <template>
   <div class="layout">
+    <div
+      class="livecoinwatch-widget-5"
+      lcw-base="USD"
+      lcw-color-tx="#abb8c3"
+      lcw-marquee-1="coins"
+      lcw-marquee-2="movers"
+      lcw-marquee-items="10"
+    ></div>
     <header class="header">
       <strong>
         <div class="sitelogo">
           <!-- This exact keyword stops the index/home
           always showing as an active-->
-          <g-image class="logo" alt="Logo" src="~/assets/images/soda.png" height="40" width="40" />
+          <!-- <g-image class="logo" alt="Logo" src="~/assets/images/btc.png" height="32" width="32" /> -->
           <span>
             <g-link exact to="/" class="siteName">
               {{
@@ -43,9 +51,19 @@ export default {
   components: {
     Footer
   },
-  props: ["showFooter"]
+  props: ["showFooter"],
+  metaInfo: {
+    script: [
+      {
+        src: "https://www.livecoinwatch.com/static/lcw-widget.js",
+        async: true,
+        defer: true
+      }
+    ]
+  }
 };
 </script>
+
 
 <style>
 body {
@@ -57,7 +75,8 @@ body {
 }
 
 .body {
-  background: #091a28;
+  /* background: #091a28; */
+  background: #1a1a1a;
   /* overflow-x: hidden; */
 }
 
