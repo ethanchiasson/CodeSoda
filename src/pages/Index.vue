@@ -6,14 +6,11 @@
         <div class="bubble"></div>
         <div class="bubble"></div>
         <!-- <g-image class="logo" alt="Logo" src="~/assets/images/soda.png" height="80" width="80" /> -->
-        <h1
-          style="text-align: center"
-          class="subtitle1"
-        >Refreshing Content From Trust Crypto Enthusiast</h1>
+        <h1 style="text-align: center" class="subtitle1">Real Blockchain Content Brewed Daily</h1>
         <p
           style="text-align: center"
           class="subtitle2"
-        >Bitcoin to Alt-coins, ICOs & Scams, we discuss it all</p>
+        >Bitcoin, alt-coins, ICOs & scams, it's all here.</p>
         <div class="bubble"></div>
         <div class="bubble"></div>
         <div class="bubble"></div>
@@ -31,6 +28,11 @@
         <article v-for="edge in $page.allPost.edges" :key="edge.node.id">
           <div class="postContainer">
             <h2 style="color: white;">{{ edge.node.title }}</h2>
+            <g-image
+              :src="edge.node.cover_image"
+              style="width: 100% ; padding-top: 15px;"
+              class="coverimage"
+            ></g-image>
             <h3 style="color: lightgrey">by {{ edge.node.author }}</h3>
             <p>Posted {{ edge.node.date }} - {{ edge.node.timeToRead }} min read</p>
             <div class="divider"></div>
@@ -146,7 +148,7 @@
               <a href>Contact</a>
             </li>
             <li>
-              <a href>Advertise</a>
+              <a>Advertise</a>
             </li>
             <li>
               <a href>Articles</a>
@@ -383,227 +385,13 @@ export default {
   font-size: 2rem;
   color: white;
 }
-
+/* 
 p2 {
   font-size: 2.5rem;
   padding-right: 20px;
-}
+} */
 
 span.titles {
   font-weight: bold;
-}
-
-.postContainer {
-  background-color: #212121;
-  /* background-color: #002b36; */
-  border-radius: 10px;
-  padding: 20px;
-  padding-top: 5px;
-  margin-bottom: 25px;
-}
-
-.divider {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  width: 100%;
-  background: linear-gradient(45deg, #2e7eff, rgb(231, 50, 255));
-
-  height: 5px;
-  border-radius: 5px;
-}
-
-.tagContainer {
-  margin-top: 25px;
-}
-
-/* Styling for "Read More" Link */
-.gLinkPost {
-  text-decoration: none;
-  color: white;
-}
-
-/* Read More Box Style */
-.readMore {
-  margin-top: 25px;
-  background-color: #1a1a1a;
-  width: 100px;
-  padding: 5px;
-  border-radius: 10px;
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 30px;
-  border: 2px solid #1a1a1a;
-  color: white;
-}
-
-/* Read More Rover */
-.readMore:hover {
-  margin-top: 25px;
-  background: linear-gradient(45deg, #2e7eff, rgb(231, 50, 255));
-  width: 100px;
-  padding: 5px;
-  border-radius: 10px;
-  text-align: center;
-  text-decoration: none;
-  margin-top: 30px;
-  border: 2px solid #1a1a1a;
-}
-
-/* Changes text Color for Post Container / content */
-article {
-  color: white;
-}
-
-.subtitle {
-  font-weight: bold;
-  font-size: 1.25rem;
-  color: white;
-}
-
-/* Span for tags. */
-.span {
-  border-radius: 5px;
-  margin-right: 10px;
-  padding: 5px;
-  color: white;
-  text-decoration: none;
-}
-/* Tags hover effects */
-.span:hover {
-  border-radius: 5px;
-  margin-right: 10px;
-  padding: 5px;
-  color: white;
-  text-decoration: none;
-  background: linear-gradient(45deg, #2e7eff, rgb(231, 50, 255));
-}
-
-footer {
-  margin-top: 75px;
-}
-
-/* News Letter Styles */
-.newsletterSubtitle {
-  width: 90%;
-  text-align: center;
-  margin: auto;
-  margin-bottom: 30px;
-  /* color: #43779e; */
-  color: white;
-  font-size: 1rem;
-}
-
-.newsletterLabel {
-  margin-bottom: 20px;
-  color: white;
-  font-size: 1.25rem;
-  margin-right: 10px;
-}
-
-.newsletterContainer {
-  width: 100%;
-  background-color: #212121;
-  border-radius: 0px;
-  padding-top: 15px;
-  border-top: 4px solid red;
-  border-bottom: 4px solid red;
-  border-left-width: 0;
-  border-right-width: 0;
-  border-image: linear-gradient(to right, #2e7eff, rgb(231, 50, 255)) 1 stretch;
-}
-
-#mc_embed_signup {
-  /* Adding these things got me disred email form */
-  display: inline-block;
-  /*  */
-  text-align: center;
-  margin-left: 20px;
-  color: white;
-  margin-bottom: 30px;
-  font-weight: bold;
-}
-
-#mce-EMAIL {
-  background-color: #1a1a1a;
-  border: #1a1a1a 2px solid;
-  border-radius: 5px;
-  color: white;
-  padding: 5px;
-  font-size: 1rem;
-  width: 75%;
-}
-
-#mc-embedded-subscribe {
-  color: #1a1a1a;
-  padding: 5px;
-  font-size: 1rem;
-  font-weight: bold;
-  width: 100px;
-  background-color: white;
-  border: white 2px solid;
-  border-radius: 5px;
-  margin-top: 15px;
-  cursor: pointer;
-  width: 40%;
-}
-
-#mc-embedded-subscribe:hover {
-  color: white;
-  padding: 5px;
-  font-size: 1rem;
-  font-weight: bold;
-  width: 40%;
-  background: linear-gradient(45deg, #2e7eff, rgb(231, 50, 255));
-  border: #1a1a1a 2px solid;
-  border-radius: 5px;
-  margin-top: 15px;
-  cursor: pointer;
-}
-
-/* End News Letter Styles */
-
-/* Footer Styles */
-.footerContainer {
-  width: 100%;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.aboutFooter {
-  text-decoration: none;
-  font-size: bold;
-  color: white;
-}
-
-.left,
-.right {
-  width: auto;
-  height: auto;
-  text-align: start;
-}
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-/* End Footer Styles */
-
-a {
-  text-decoration: none;
-  font-size: bold;
-  color: white;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  padding-top: 5px;
-  margin-left: -55%;
 }
 </style>

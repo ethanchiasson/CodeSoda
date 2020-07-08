@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="backButton">
-      <a href="javascript:history.go(-1)" class="button">↩</a>
+      <a href="javascript:history.go(-1)" class="button">Articles</a>
     </div>
     <h1 v-html="$page.post.title" style="text-align: center ; color: white"></h1>
     <!-- <g-image :src="$page.post.cover_image" style="margin: 0 auto"></g-image> -->
@@ -59,11 +59,11 @@
                   <label for="mce-EMAIL">Hey you! Please Consider Joining The Newsletter 💌</label>
                 </div>
                 <div class="newsletterSubtitle">
-                  <p>
+                  <p2 class="newsletterSubtitle">
                     Joining our newsletter means that you can stay up to date on the
                     latest trends in web development and design with our hand picked list of articles
                     from our amazingly talented curated authors.
-                  </p>
+                  </p2>
                 </div>
                 <input
                   type="email"
@@ -104,13 +104,9 @@
       <!--newsletter container-->
       <div class="footerContainer">
         <div class="left">
-          <p class="aboutFooter">
-            WebSoda.io is maintained by Ethan Chiasson and small team.
-            <br />We aim to provide users with high quality content related to
-            <br />programming, front-end development & design,
-            <br />and all
-            things web development.
-          </p>
+          <p
+            class="aboutFooter"
+          >BloqDaily.com is a independent curated daily blockchain, technology, and world news blog that aims to provide high quality content.</p>
         </div>
         <div class="right">
           <ul>
@@ -124,7 +120,19 @@
               <a href>Articles</a>
             </li>
             <li>
-              <a href>Authors</a>
+              <a href>Bitcoin</a>
+            </li>
+            <li>
+              <a href>Ethereum</a>
+            </li>
+            <li>
+              <a href>Altcoins</a>
+            </li>
+            <li>
+              <a href>Community</a>
+            </li>
+            <li>
+              <a href>Tools</a>
             </li>
           </ul>
         </div>
@@ -178,7 +186,7 @@ h2#table-of-contents {
 }
 
 .toc {
-  background-color: #112d43;
+  background-color: #212121;
   width: auto;
   border-radius: 5px;
   color: white;
@@ -203,8 +211,8 @@ h2#table-of-contents {
 
 .button {
   /* background-color: #0d2538; */
-  background-color: #091a28;
-  border: #002b36;
+  background-color: #212121;
+  border: #212121;
   color: white;
   width: 120px;
   font-size: 1rem;
@@ -212,35 +220,16 @@ h2#table-of-contents {
   margin-bottom: 20px;
   padding: 10px;
   border-radius: 5px;
-  cursor: pointer;
   text-decoration: none;
 }
 
 .button:hover {
-  background-color: #002b36;
-  border: #002b36;
-  color: white;
-  width: 120px;
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  padding: 10px;
-  border-radius: 5px;
   cursor: pointer;
   background: linear-gradient(135deg, #2e7eff, rgb(231, 50, 255));
   text-decoration: none;
 }
 /* End Back Button */
-/* 
- 
- 
- 
-*/
-/* 
- 
- 
- 
-*/
+
 /* Article, Spacing, and More */
 
 /* Spacer */
@@ -272,122 +261,18 @@ li {
 
 code {
   /* background-color: #143855; */
-  background-color: #112d43;
-  padding: 4px;
+  background-color: black;
+  padding: 0.25em;
   border-radius: 4px;
   color: white;
 }
 
 em {
-  color: #f1e7d0;
-  padding: 2px;
-  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
-  background: linear-gradient(
-    127deg,
-    rgba(231, 50, 255, 0.8),
-    rgb(1, 69, 255) 70.71%
-  );
-}
-
-pre.language-js {
-  /* background-color: #0d2538; */
-  background-color: #112d43;
-  text-shadow: none;
-  /* border: 2px solid whitesmoke; */
-  border-radius: 15px;
-  margin: 0 auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  box-shadow: 5px 7px rgb(223, 223, 38);
-}
-
-/*  HTML Code Block Styling */
-pre.language-html {
-  /* background-color: #0d2538; */
-  background-color: #112d43;
-  text-shadow: none;
-  /* border: 2px solid whitesmoke; */
-  border-radius: 15px;
-  margin: 0 auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  box-shadow: 5px 7px darkcyan;
-}
-
-/* JSON Code Block Styling */
-pre.language-json {
-  /* background-color: #0d2538; */
-  background-color: #112d43;
-  text-shadow: none;
-  /* border: 2px solid whitesmoke; */
-  border-radius: 15px;
-  margin: 0 auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  box-shadow: 5px 7px wheat;
-}
-
-pre.language-css {
-  /* background-color: #0d2538; */
-  background-color: #112d43;
-  text-shadow: none;
-  /* border: 2px solid whitesmoke; */
-  border-radius: 15px;
-  margin: 0 auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  box-shadow: 5px 7px plum;
-}
-
-pre.language-cs {
-  /* background-color: #0d2538; */
-  background-color: #112d43;
-  text-shadow: none;
-  /* border: 2px solid whitesmoke; */
-  border-radius: 15px;
-  margin: 0 auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  box-shadow: 5px 7px rgb(15, 134, 144);
-}
-
-span.token.keyword {
-  color: #ff3e24;
-  text-shadow: none;
-  font-weight: bolder;
-}
-
-span.token.operator {
-  color: #1ee63f;
-  background-color: #222222;
-  text-shadow: none;
-  font-size: 16px;
-  font-weight: bold;
-}
-span.token.number {
-  color: #ffeb66;
-  text-shadow: none;
-}
-span.token.string {
-  color: #ffeb66;
-  text-shadow: none;
-}
-
-span {
-  text-shadow: none;
-}
-
-span.token.tag {
-  color: orangered;
-}
-
-code.language-js,
-code.language-json,
-code.language-html,
-code.language-java,
-code.language-cs {
-  text-shadow: none;
   color: white;
+  padding: 1.75px;
+  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+  background: #212121;
+  padding: 0.25em;
 }
 
 .author {
@@ -419,15 +304,6 @@ code.language-cs {
   border-radius: 5px;
 }
 /* 
- 
- 
- 
-*/
-/* 
- 
- 
- 
-*/
 /* Start Afilliate Banner Styles */
 .affiliateSub {
   color: white;
@@ -435,7 +311,7 @@ code.language-cs {
 .affiliateBanner {
   width: 100%;
   height: 150px;
-  background-color: #112d43;
+  background-color: #212121;
   margin-bottom: 20px;
   margin-top: 20px;
   border-radius: 10px;
@@ -443,153 +319,13 @@ code.language-cs {
 /* End Afilliate Banner Styles */
 /* 
  
-*/
-/* 
- 
- 
- 
-*/
-/* News Letter Styles */
-.newsletterSubtitle {
-  width: 80%;
-  text-align: center;
-  margin: auto;
-  margin-bottom: 20px;
-  color: #f1e7d0;
-  font-size: 1rem;
-  font-weight: bold;
-}
 
-.newsletterLabel {
-  margin-bottom: 20px;
-  color: white;
-  font-size: 1.25rem;
-  margin-right: 10px;
-}
 
-.newsletterContainer {
-  width: 100%;
-  background-color: #112d43;
-  border-radius: 0px;
-  padding-top: 15px;
-  border-top: 4px solid red;
-  border-bottom: 4px solid red;
-  border-left-width: 0;
-  border-right-width: 0;
-  border-image: linear-gradient(to right, #2e7eff, rgb(231, 50, 255)) 1 stretch;
-}
-
-#mc_embed_signup {
-  /* Adding these things got me disred email form */
-  display: inline-block;
-  /*  */
-  text-align: center;
-  margin-left: 20px;
-  color: white;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-#mce-EMAIL {
-  background-color: #091a28;
-  border: #091a28 2px solid;
-  border-radius: 5px;
-  color: white;
-  padding: 5px;
-  font-size: 1rem;
-  width: 75%;
-}
-
-#mc-embedded-subscribe {
-  color: #222222;
-  padding: 5px;
-  font-size: 1rem;
-  font-weight: bold;
-  width: 100px;
-  background-color: white;
-  border: white 2px solid;
-  border-radius: 5px;
-  margin-top: 15px;
-  cursor: pointer;
-  width: 40%;
-}
-
-#mc-embedded-subscribe:hover {
-  color: white;
-  padding: 5px;
-  font-size: 1rem;
-  font-weight: bold;
-  width: 40%;
-  background: linear-gradient(45deg, #2e7eff, rgb(231, 50, 255));
-  border: #222222 2px solid;
-  border-radius: 5px;
-  margin-top: 15px;
-  cursor: pointer;
-}
-/* End News Letter Styles */
-/* 
- 
- 
- 
-*/
-/* 
- 
- 
- 
-*/
-/* Footer Styles */
-footer {
-  margin-top: 75px;
-}
-
-.footerContainer {
-  width: 100%;
-  margin-top: 50px;
-  margin-bottom: 100px;
-}
-
-.aboutFooter {
-  text-decoration: none;
-  font-size: bold;
-  /* color: #43779e; */
-  color: white;
-}
-
-.left,
-.right {
-  /* background-color: #091a28; */
-  background-color: #091a28;
-  width: auto;
-  height: auto;
-  text-align: start;
-}
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
-.footerContainer a {
-  color: white;
-}
-/* End Footer Styles */
-/* 
- 
- 
- 
-*/
-/* 
- 
- 
- 
-*/
 /* Start Applause button */
 applause-button {
   position: relative;
   cursor: pointer;
+  margin: 1em;
 }
 applause-button .style-root {
   position: absolute;
@@ -607,7 +343,7 @@ applause-button .style-root:after {
   content: " ";
   display: block;
   border-radius: 50%;
-  border: 1px solid;
+  border: 1px solid grey;
 }
 applause-button .style-root:hover:after:not(.clap-limit-exceeded) {
   border-color: inherit;
@@ -684,9 +420,10 @@ applause-button g.sparkle g:nth-child(5) {
 }
 applause-button:hover:not(.clapped) .shockwave {
   animation-name: shockwave;
-  animation-duration: 1s;
+  animation-duration: 1.25s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
+  background: linear-gradient(135deg, #2e7eff, rgb(231, 50, 255));
 }
 applause-button.clap {
   animation-name: pulse;
@@ -764,4 +501,104 @@ applause-button.clap .count {
   }
 }
 /* End Applause button */
+
+/* Start Code Prism */
+
+pre.language-js {
+  background-color: #212121;
+  text-shadow: none;
+
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  box-shadow: 5px 7px yellow;
+}
+
+/*  HTML Code Block Styling */
+pre.language-html {
+  background-color: #212121;
+  text-shadow: none;
+
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  box-shadow: 5px 7px black;
+}
+
+/* JSON Code Block Styling */
+pre.language-json {
+  background-color: #212121;
+  text-shadow: none;
+
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  box-shadow: 5px 7px wheat;
+}
+
+pre.language-css {
+  background-color: #212121;
+  text-shadow: none;
+
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  box-shadow: 5px 7px plum;
+}
+
+pre.language-cs {
+  background-color: #212121;
+  text-shadow: none;
+
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  box-shadow: 5px 7px rgb(15, 134, 144);
+}
+
+span.token.keyword {
+  color: #ff3e24;
+  text-shadow: none;
+  font-weight: bolder;
+}
+
+span.token.operator {
+  color: #1ee63f;
+  background-color: #212121;
+  text-shadow: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+span.token.number {
+  color: #ffeb66;
+  text-shadow: none;
+}
+span.token.string {
+  color: #ffeb66;
+  text-shadow: none;
+}
+
+span {
+  text-shadow: none;
+}
+
+span.token.tag {
+  color: orangered;
+}
+
+code.language-js,
+code.language-json,
+code.language-html,
+code.language-java,
+code.language-cs {
+  text-shadow: none;
+  color: white;
+}
+
+/* End prism */
 </style>

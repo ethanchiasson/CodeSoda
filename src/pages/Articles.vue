@@ -3,10 +3,10 @@
   <layout>
     <!-- <h1 style="color: #222222 ;">Articles</h1> -->
     <p class="welcome">
-      <a class="subtitle">👋 Welcome Fellow Coder!</a>
+      <a class="subtitle">👋 Welcome!</a>
       <br />
       <br />Search through our collection of articles by awesome
-      developers just like you.
+      people just like you.
       <!-- <br />Interested in becoming a curated author ?
       <a href="Google.com" class="newAuthorLink">Click Here</a>-->
     </p>
@@ -26,7 +26,7 @@
         <div class="tagContainer">
           <g-link
             class="span"
-            style="padding: .5em ; background-color: #091a28;"
+            style="padding: .5em ; background-color: #1a1a1a;"
             v-for="tag in edge.node.tags"
             :to="tag.path"
             :key="tag.id"
@@ -105,13 +105,9 @@
       <!--newsletter container-->
       <div class="footerContainer">
         <div class="left">
-          <p class="aboutFooter">
-            WebSoda.io is maintained by Ethan Chiasson and small team.
-            <br />We aim to provide users with high quality content related to
-            <br />programming, front-end development & design,
-            <br />and all
-            things web development.
-          </p>
+          <p
+            class="aboutFooter"
+          >BloqDaily.com is a independent curated daily blockchain, technology, and world news blog that aims to provide high quality content.</p>
         </div>
         <div class="right">
           <ul>
@@ -125,7 +121,19 @@
               <a href>Articles</a>
             </li>
             <li>
-              <a href>Authors</a>
+              <a href>Bitcoin</a>
+            </li>
+            <li>
+              <a href>Ethereum</a>
+            </li>
+            <li>
+              <a href>Altcoins</a>
+            </li>
+            <li>
+              <a href>Community</a>
+            </li>
+            <li>
+              <a href>Tools</a>
             </li>
           </ul>
         </div>
@@ -173,150 +181,9 @@ export default {
 };
 </script>
 
+
+style
 <style>
-footer {
-  margin-top: 75px;
-}
-
-/* News Letter Styles */
-.newsletterSubtitle {
-  width: 80%;
-  text-align: center;
-  margin: auto;
-  margin-bottom: 30px;
-  color: #f1e7d0;
-  font-size: 1rem;
-}
-
-.newsletterLabel {
-  margin-bottom: 20px;
-  color: white;
-  font-size: 1.25rem;
-  margin-right: 10px;
-}
-
-.newsletterContainer {
-  width: 100%;
-  background-color: #112d43;
-  border-radius: 0px;
-  padding-top: 15px;
-  border-top: 4px solid red;
-  border-bottom: 4px solid red;
-  border-left-width: 0;
-  border-right-width: 0;
-  border-image: linear-gradient(to right, #2e7eff, rgb(231, 50, 255)) 1 stretch;
-}
-
-#mc_embed_signup {
-  /* Adding these things got me disred email form */
-  display: inline-block;
-  /*  */
-  text-align: center;
-  margin-left: 20px;
-  color: white;
-  margin-bottom: 30px;
-  font-weight: bold;
-}
-
-#mce-EMAIL {
-  background-color: #091a28;
-  border: #091a28 2px solid;
-  border-radius: 5px;
-  color: white;
-  padding: 5px;
-  font-size: 1rem;
-  width: 75%;
-}
-
-#mc-embedded-subscribe {
-  color: #222222;
-  padding: 5px;
-  font-size: 1rem;
-  font-weight: bold;
-  width: 100px;
-  background-color: white;
-  border: white 2px solid;
-  border-radius: 5px;
-  margin-top: 15px;
-  cursor: pointer;
-  width: 40%;
-}
-
-#mc-embedded-subscribe:hover {
-  color: white;
-  padding: 5px;
-  font-size: 1rem;
-  font-weight: bold;
-  width: 40%;
-  background: linear-gradient(45deg, #2e7eff, rgb(231, 50, 255));
-  border: #222222 2px solid;
-  border-radius: 5px;
-  margin-top: 15px;
-  cursor: pointer;
-}
-
-/* End News Letter Styles */
-
-/* Footer Styles */
-.footerContainer {
-  width: 100%;
-  margin-top: 50px;
-  margin-bottom: 100px;
-}
-
-.aboutFooter {
-  text-decoration: none;
-  font-size: bold;
-  color: white;
-}
-
-.left,
-.right {
-  background-color: #091a28;
-  width: auto;
-  height: auto;
-  text-align: start;
-}
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-/* End Footer Styles */
-
-a {
-  text-decoration: none;
-  font-size: bold;
-  color: white;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  padding-top: 5px;
-}
-
-.newAuthorLink {
-  text-decoration: none;
-  border-radius: 5px;
-  padding: 5px;
-  color: white;
-  font-weight: bold;
-  display: inline;
-  text-decoration: none;
-  background-image: linear-gradient(transparent, transparent),
-    linear-gradient(transparent, transparent),
-    linear-gradient(to right, #091a28, #091a28);
-  background-repeat: no-repeat;
-  background-position: 120%, 122%, 0 130%;
-  background-size: 100% 10px;
-}
-
 .welcome {
   background-color: #112d43;
   padding: 10px;
@@ -352,68 +219,6 @@ li {
   background: linear-gradient(45deg, #2e7eff, rgb(231, 50, 255));
 }
 
-/* wraps each post in its own container */
-.postContainer {
-  background-color: #112d43;
-  /* background-color: #002b36; */
-  border-radius: 10px;
-  padding: 20px;
-  padding-top: 5px;
-  margin-bottom: 25px;
-}
-
-.divider {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  width: 70%;
-  background: linear-gradient(135deg, #2e7eff, rgb(231, 50, 255));
-  height: 5px;
-  border-radius: 5px;
-}
-
-.tagContainer {
-  margin-top: 25px;
-}
-
-/* Styling for "Read More" Link */
-.gLinkPost {
-  text-decoration: none;
-  color: white;
-}
-
-/* Read More Box Style */
-.readMore {
-  margin-top: 25px;
-  background-color: #091a28;
-  width: 100px;
-  padding: 5px;
-  border-radius: 10px;
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 30px;
-  border: 2px solid #091a28;
-  color: white;
-}
-
-/* Read More Rover */
-.readMore:hover {
-  margin-top: 25px;
-  background: linear-gradient(45deg, #2e7eff, rgb(231, 50, 255));
-  width: 100px;
-  padding: 5px;
-  border-radius: 10px;
-  text-align: center;
-  text-decoration: none;
-  margin-top: 30px;
-  border: 2px solid #091a28;
-}
-
-/* Changes text Color for Post Container / content */
-article {
-  color: white;
-}
-
 /* Pagnation Style */
 .pager {
   font-size: 1.25rem;
@@ -433,3 +238,4 @@ article {
   text-decoration: none;
 }
 </style>
+
