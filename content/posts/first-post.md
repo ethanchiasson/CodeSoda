@@ -1,11 +1,11 @@
 ---
-title: How to Deploy your next project on Netlify
+title: Why Bitcoin will...
 author: Ethan Chiasson
 image: "./images/ethan.png"
 excerpt: "Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis."
 date: 2019-12-06
 tags: ["Technology", "Javascript"]
-cover_image: "./images/bg1.jpg"
+cover_image: "./images/btc.png"
 ---
 
 ## First Post

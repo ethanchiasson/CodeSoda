@@ -1,36 +1,28 @@
 <template>
   <Layout>
     <div class="backButton">
-      <a href="javascript:history.go(-1)" class="button">Articles</a>
+      <a href="/articles" class="button">Articles</a>
     </div>
-    <h1 v-html="$page.post.title" style="text-align: center ; color: white"></h1>
+    <h1 v-html="$page.post.title" style="text-align: start ; color: white"></h1>
+    <g-image :src="$page.post.cover_image" style="width: 100% ;" class="coverimage"></g-image>
     <!-- <g-image :src="$page.post.cover_image" style="margin: 0 auto"></g-image> -->
     <div class="divider"></div>
-    <div class="headerContainer" style="overflow: hidden;">
-      <div class="author" style="overflow: hidden; margin-top: 20px; float: left">
-        <g-image :src="$page.post.image" style="float: left;"></g-image>
-        <p
-          v-html="$page.post.author"
-          style="margin-left: 110px; margin-top: 25px; font-weight: bold;"
-        ></p>
-        <p
-          style="font-weight: normal; font-size: 1rem; margin-left: 110px;"
-          v-html="$page.post.date"
-        ></p>
-      </div>
-      <div class="clap" style="overflow: hidden; float: right; padding: 15px;">
-        <div class="time" style="float:left; margin-right: 250px;">
-          <div class="timeToRead" style="overflow: hidden; margin-top: 20px;">
-            <p style="float: left;" v-html="$page.post.timeToRead"></p>
-            <p style="float: right;">minute read</p>
+
+    <div class="headerContainer">
+      <div class="author" style="margin-top: 2em">
+        <g-image :src="$page.post.image"></g-image>
+        <p v-html="$page.post.author" style="font-weight: bold"></p>
+        <p style="font-weight: normal;" v-html="$page.post.date"></p>
+        <div class="clap" style="flex:1; display: flex;">
+          <div class="time" style="flex:1">
+            <div class="timeToRead" style>
+              <p>
+                <span style v-html="$page.post.timeToRead"></span> min read
+              </p>
+            </div>
           </div>
+          <applause-button color="white" style="width: 50px; height: 50px;" />
         </div>
-        <!-- old applause color -->
-        <!-- color="#2e7eff"  -->
-        <applause-button
-          color="white"
-          style="width: 50px; height: 50px; margin-top: 20px; float: right;"
-        />
       </div>
     </div>
     <div v-html="$page.post.content" class="posttext"></div>
@@ -39,109 +31,13 @@
       <div class="affiliateBanner"></div>
       <p class="affiliateSub">This affiliate banner helps support what we do! 😇</p>
     </div>
-    <footer>
-      <!-- Begin newsletterContainer -->
-      <div class="newsletterContainer">
-        <!-- Begin Mailchimp Signup Form -->
-        <div id="mc_embed_signup">
-          <form
-            action="https://gmail.us4.list-manage.com/subscribe/post?u=57c4947af83579a34e710970b&amp;id=1e119d8cf0"
-            method="post"
-            id="mc-embedded-subscribe-form"
-            name="mc-embedded-subscribe-form"
-            class="validate"
-            target="_blank"
-            novalidate
-          >
-            <div id="mc_embed_signup_scroll">
-              <div class="mc-field-group">
-                <div class="newsletterLabel">
-                  <label for="mce-EMAIL">Hey you! Please Consider Joining The Newsletter 💌</label>
-                </div>
-                <div class="newsletterSubtitle">
-                  <p2 class="newsletterSubtitle">
-                    Joining our newsletter means that you can stay up to date on the
-                    latest trends in web development and design with our hand picked list of articles
-                    from our amazingly talented curated authors.
-                  </p2>
-                </div>
-                <input
-                  type="email"
-                  value
-                  name="EMAIL"
-                  class="required email"
-                  id="mce-EMAIL"
-                  placeholder="Your Email Address"
-                />
-              </div>
-              <div id="mce-responses" class="clear">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-              </div>
-              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                <input
-                  type="text"
-                  name="b_57c4947af83579a34e710970b_1e119d8cf0"
-                  tabindex="-1"
-                  value
-                />
-              </div>
-              <div class="clear">
-                <input
-                  type="submit"
-                  value="Subscribe"
-                  name="subscribe"
-                  id="mc-embedded-subscribe"
-                  class="button"
-                />
-              </div>
-            </div>
-          </form>
-        </div>
-        <!--End mc_embed_signup-->
-      </div>
-      <!--newsletter container-->
-      <div class="footerContainer">
-        <div class="left">
-          <p
-            class="aboutFooter"
-          >BloqDaily.com is a independent curated daily blockchain, technology, and world news blog that aims to provide high quality content.</p>
-        </div>
-        <div class="right">
-          <ul>
-            <li>
-              <a href>Contact</a>
-            </li>
-            <li>
-              <a href>Advertise</a>
-            </li>
-            <li>
-              <a href>Articles</a>
-            </li>
-            <li>
-              <a href>Bitcoin</a>
-            </li>
-            <li>
-              <a href>Ethereum</a>
-            </li>
-            <li>
-              <a href>Altcoins</a>
-            </li>
-            <li>
-              <a href>Community</a>
-            </li>
-            <li>
-              <a href>Tools</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+    <Footer />
   </Layout>
 </template>
 
 <script>
+import Footer from "~/components/Footer.vue";
+
 export default {
   mounted() {
     let applauseScript = document.createElement("script");
@@ -157,6 +53,12 @@ export default {
     //   "https://unpkg.com/applause-button/dist/applause-button.css"
     // );
     // document.head.appendChild(applauseScriptCSS);
+  },
+  metaInfo: {
+    title: "Article"
+  },
+  components: {
+    Footer
   }
 };
 </script>
@@ -167,11 +69,11 @@ query($path: String!) {
   post(path: $path) {
     title
     author
-    image(quality: 100)
+    image(quality: 100, height: 64, width: 64, fit: cover)
     date(format: "MMMM Do, YYYY")
     timeToRead
     content
-    cover_image(width: 425, height:200, quality: 100, fit: fill)
+    cover_image( height: 1000,quality: 100, fit: cover)
   }
 }
 </page-query>
@@ -225,7 +127,7 @@ h2#table-of-contents {
 
 .button:hover {
   cursor: pointer;
-  background: linear-gradient(135deg, #2e7eff, rgb(231, 50, 255));
+  background: linear-gradient(45deg, #2eff7b, #00792c);
   text-decoration: none;
 }
 /* End Back Button */
@@ -299,7 +201,7 @@ em {
   margin-top: 20px;
   margin-bottom: 10px;
   width: 100%;
-  background: linear-gradient(135deg, #2e7eff, rgb(231, 50, 255));
+  background: linear-gradient(45deg, #2eff7b, #00792c);
   height: 5px;
   border-radius: 5px;
 }
@@ -423,7 +325,7 @@ applause-button:hover:not(.clapped) .shockwave {
   animation-duration: 1.25s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
-  background: linear-gradient(135deg, #2e7eff, rgb(231, 50, 255));
+  background: linear-gradient(45deg, #2eff7b, #00792c);
 }
 applause-button.clap {
   animation-name: pulse;

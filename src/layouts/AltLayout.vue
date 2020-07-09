@@ -72,6 +72,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  color: white;
 }
 
 .body {
@@ -89,7 +90,7 @@ body {
   text-decoration: none;
   background-image: linear-gradient(transparent, transparent),
     linear-gradient(transparent, transparent),
-    linear-gradient(to right, #2e7eff, rgb(231, 50, 255));
+    linear-gradient(45deg, #2eff7b, #00792c);
   background-repeat: no-repeat;
   background-position: 120%, 122%, 0 130%;
   background-size: 100% 10px;
@@ -140,7 +141,7 @@ body {
 /* Scroll Bar Style */
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 7px;
 }
 
 /* Track */
@@ -153,7 +154,7 @@ body {
 ::-webkit-scrollbar-thumb {
   background-image: linear-gradient(transparent, transparent),
     linear-gradient(transparent, transparent),
-    linear-gradient(45deg, #2e7eff, rgb(231, 50, 255));
+    linear-gradient(45deg, #2eff7b, #00792c);
   border-radius: 10px;
 }
 
@@ -161,7 +162,7 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background-image: linear-gradient(transparent, transparent),
     linear-gradient(transparent, transparent),
-    linear-gradient(45deg, #2e7eff, rgb(231, 50, 255));
+    linear-gradient(45deg, #2eff7b, #00792c);
   border-radius: 10px;
 }
 /*  */

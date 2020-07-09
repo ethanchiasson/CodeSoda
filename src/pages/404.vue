@@ -1,10 +1,10 @@
 <template>
   <Layout>
     <div class="container">
-      <h1 style="text-align: center ; color: #222222">🙁 Sorry, that page does not exist!!!</h1>
+      <h1 style="text-align: center ;">🙁 Sorry, that page does not exist!!!</h1>
       <div class="read">
         <p
-          style="text-align: center ; color: #222222"
+          style="text-align: center ;"
         >Looking for refreshing articles on all things web development?</p>
         <button
           style="text-align: center ;"
@@ -18,13 +18,13 @@
 
 <style>
 button {
-  color: #222222;
+  color: #212121;
   padding: 5px;
   font-size: 1rem;
   font-weight: bold;
   width: 100px;
-  background-color: #f1e7d0;
-  border: #222222 2px solid;
+  background: linear-gradient(45deg, #2eff7b, #00792c);
+  border: #212121 2px solid;
   border-radius: 5px;
   margin-top: 15px;
   cursor: pointer;
@@ -32,16 +32,7 @@ button {
 }
 
 button:hover {
-  color: white;
-  padding: 5px;
-  font-size: 1rem;
-  font-weight: bold;
-  width: 40%;
-  background: linear-gradient(45deg, #2e7eff, rgb(231, 50, 255));
-  border: #222222 2px solid;
-  border-radius: 5px;
-  margin-top: 15px;
-  cursor: pointer;
+  box-shadow: 2px 2px 10px black;
 }
 
 div.read {

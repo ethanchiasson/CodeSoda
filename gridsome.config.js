@@ -5,23 +5,10 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: "BloqDaily.io",
+  siteName: "BloqDaily.com",
   siteDescription:
-    "A Publication with Refreshing Content on Everything Cryptocurrencies.",
+    "A Publication with Refreshing Content on Everything Crypto and Tech.",
   plugins: [
-    {
-      use: "@gridsome/source-contentful",
-      options: {
-        space: process.env.CONTENTFUL_SPACE, // required
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN, // required
-        host: "cdn.contentful.com",
-        environment: "master",
-        typeName: "Contentful",
-        routes: {
-          ContentfulProduct: "/product/:slug",
-        },
-      },
-    },
     {
       use: "@gridsome/source-filesystem",
       options: {

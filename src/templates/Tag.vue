@@ -14,7 +14,7 @@
         <div class="div1">
           <g-link
             class="span"
-            style="padding: .5em ; background-color: #091a28"
+            style="padding: .5em ; background-color: #1a1a1a"
             v-for="tag in edge.node.tags"
             :to="tag.path"
             :key="tag.id"

@@ -1,11 +1,11 @@
 ---
-title: Using and Customizing PrismJS in Gridsome
+title: BTC has some issues
 author: Ethan Chiasson
 image: "./images/ethan.png"
 excerpt: "Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis."
 date: 2019-12-10
 tags: ["Gridsome", "PrismJS", "Tutorials"]
-cover_image: "./images/bg1.jpg"
+cover_image: "./images/btc.png"
 ---
 
 ## Using and Customizing PrismJS in Gridsome

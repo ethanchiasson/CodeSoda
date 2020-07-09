@@ -68,98 +68,7 @@
       <a href="https://gridsome.org/docs" target="_blank" rel="noopener">Gridsome Docs</a>
       <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
     </p>-->
-    <!-- <Footer></Footer> -->
-    <footer>
-      <!-- Begin newsletterContainer -->
-      <div class="newsletterContainer">
-        <!-- Begin Mailchimp Signup Form -->
-        <div id="mc_embed_signup">
-          <form
-            action="https://gmail.us4.list-manage.com/subscribe/post?u=57c4947af83579a34e710970b&amp;id=1e119d8cf0"
-            method="post"
-            id="mc-embedded-subscribe-form"
-            name="mc-embedded-subscribe-form"
-            class="validate"
-            target="_blank"
-            novalidate
-          >
-            <div id="mc_embed_signup_scroll">
-              <div class="mc-field-group">
-                <div class="newsletterLabel">
-                  <label for="mce-EMAIL">Hey you! Please Consider Joining The Newsletter 💌</label>
-                </div>
-                <div class="newsletterSubtitle">
-                  <p>
-                    Joining our newsletter means that you can stay up to date on the
-                    latest trends in web development and design with our hand picked list of articles
-                    from our amazingly talented curated authors.
-                  </p>
-                </div>
-                <input
-                  type="email"
-                  value
-                  name="EMAIL"
-                  class="required email"
-                  id="mce-EMAIL"
-                  placeholder="Your Email Address"
-                />
-              </div>
-              <div id="mce-responses" class="clear">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-              </div>
-              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                <input
-                  type="text"
-                  name="b_57c4947af83579a34e710970b_1e119d8cf0"
-                  tabindex="-1"
-                  value
-                />
-              </div>
-              <div class="clear">
-                <input
-                  type="submit"
-                  value="Subscribe"
-                  name="subscribe"
-                  id="mc-embedded-subscribe"
-                  class="button"
-                />
-              </div>
-            </div>
-          </form>
-        </div>
-        <!--End mc_embed_signup-->
-      </div>
-      <!--newsletter container-->
-      <div class="footerContainer">
-        <div class="left">
-          <p class="aboutFooter">
-            WebSoda.io is maintained by Ethan Chiasson and small team.
-            <br />We aim to provide users with high quality content related to
-            <br />programming, front-end development & design,
-            <br />and all
-            things web development.
-          </p>
-        </div>
-        <div class="right">
-          <ul>
-            <li>
-              <a href>Contact</a>
-            </li>
-            <li>
-              <a>Advertise</a>
-            </li>
-            <li>
-              <a href>Articles</a>
-            </li>
-            <li>
-              <a href>Authors</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+    <Footer />
   </Layout>
 </template>
 
@@ -216,7 +125,7 @@ export default {
   color: white;
 }
 .subtitle1 {
-  background: -webkit-linear-gradient(#2e7eff, rgb(231, 50, 255));
+  background: -webkit-linear-gradient(45deg, #2eff7b, #00792c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2.5rem;
@@ -383,7 +292,10 @@ export default {
 
 .titles {
   font-size: 2rem;
-  color: white;
+  background: -webkit-linear-gradient(45deg, #2eff7b, #00792c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
 }
 /* 
 p2 {

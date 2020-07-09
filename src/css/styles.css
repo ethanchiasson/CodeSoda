@@ -11,7 +11,7 @@
   margin-top: 20px;
   margin-bottom: 10px;
   width: 100%;
-  background: linear-gradient(45deg, #2e7eff, rgb(231, 50, 255));
+  background: linear-gradient(45deg, #2eff7b, #00792c);
 
   height: 5px;
   border-radius: 5px;
@@ -45,7 +45,7 @@
 /* Read More Rover */
 .readMore:hover {
   margin-top: 25px;
-  background: linear-gradient(45deg, #2e7eff, rgb(231, 50, 255));
+  background: linear-gradient(45deg, #2eff7b, #00792c);
   width: 100px;
   padding: 5px;
   border-radius: 10px;
@@ -85,7 +85,7 @@ span.titles {
   padding: 5px;
   color: white;
   text-decoration: none;
-  background: linear-gradient(45deg, #2e7eff, rgb(231, 50, 255));
+  background: linear-gradient(45deg, #2eff7b, #00792c);
 }
 
 footer {
@@ -119,7 +119,7 @@ footer {
   border-bottom: 4px solid red;
   border-left-width: 0;
   border-right-width: 0;
-  border-image: linear-gradient(to right, #2e7eff, rgb(231, 50, 255)) 1 stretch;
+  border-image: linear-gradient(45deg, #2eff7b, #00792c) 1 stretch;
 }
 
 #mc_embed_signup {
@@ -163,7 +163,7 @@ footer {
   font-size: 1rem;
   font-weight: bold;
   width: 40%;
-  background: linear-gradient(45deg, #2e7eff, rgb(231, 50, 255));
+  background: linear-gradient(45deg, #2eff7b, #00792c);
   border: #1a1a1a 2px solid;
   border-radius: 5px;
   margin-top: 15px;
@@ -174,26 +174,24 @@ footer {
 
 /* Footer Styles */
 .footerContainer {
-  width: 100%;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  width: auto;
+  margin-top: 10em;
+  margin-bottom: 2em;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.aboutFooter {
+.left {
   text-decoration: none;
   font-size: bold;
   color: white;
+  text-align: start;
 }
 
 .left,
 .right {
-  width: auto;
-  height: auto;
   flex: 1;
-  min-width: 20em;
 }
 
 /* End Footer Styles */
@@ -208,10 +206,9 @@ ul {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 ul > li {
   flex: 1;
-  margin: 0.25em;
+  padding: 0.2em;
 }
