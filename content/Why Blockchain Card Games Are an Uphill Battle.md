@@ -1,28 +1,17 @@
----
-title: Why Blockchain Card Games Are an Uphill Battle
-author: Ethan Chiasson
-image: "./images/ethan.png"
-excerpt: "When gods unchained was announced back in 2016, I was hyped for a new blockchain based card game. I’ll admit, I’m not the best card game player in the world, not even close, but I grew up collecting Yu Gi Oh and Pokémon cards and I have put my fair share of hours into games like Hearthstone"
-date: 2020-07-09
-tags: ["Gaming", "ERC", "Ethereum"]
-cover_image: "./images/btc.png"
----
-
 # Why Blockchain Card Games Are an Uphill Battle
 
 ## Porlogue
-
 When gods unchained was announced back in 2016, I was hyped for a new blockchain based card game. I’ll admit, I’m not the best card game player in the world, not even close, but I grew up collecting Yu Gi Oh and Pokémon cards and I have put my fair share of hours into games like Hearthstone and Legends of Runeterra, so I like to think I know what makes a good card game fun ( at least from the standpoint of the casual player ).
 
 Gods unchained is a tactical/collectible card game that is built upon the Ethereum blockchain. Unlike traditional TCG/CCGs, God’s Unchained boast the fact that it’s cards are limited in number and live on the blockchain.
 
-Gods unchained works by allowing a user to download a browser extension like MetaMask and use Ethereum to purchase card packs which offer various tiers of card rarities depending on the type of pack purchased.
+Gods unchained works by allowing a user to download a browser extension like MetaMask and use Ethereum to purchase card packs which offer various tiers of card rarities depending on the type of pack purchased. 
 
 These cards are limited in number and can be used along with the base set of 30 cards each user received for free. Packs generally cost anywhere from $5-$100 for the rarest packs, but can contain cards worth much more ( or much less ).
 
-Since cards are limited in number, can’t be reproduced, and may have a specific place in the game Meta, digital marketplaces have helped drive up prices for some of the rarest cards. The card () was sold for over 175 ETH ( or $1200 ). That specific card probably isn’t worth $1200 when looking at the cards stats or it’s place in the game meta, but it’s _true_ rarity makes the card desirable.
+Since cards are limited in number, can’t be reproduced, and may have a specific place in the game Meta, digital marketplaces have helped drive up prices for some of the rarest cards. The card () was sold for over 175 ETH ( or $1200 ). That specific card probably isn’t worth $1200 when looking at the cards stats or it’s place in the game meta, but it’s  *true* rarity makes the card desirable. 
 
-\$1200 for a card is a lot of money, and puts many Uber rare Pokémon cards to shame in terms of price ( Despite Pokemon cards having taken decades for card prices to reach their current levels ).
+$1200 for a card is a lot of money, and puts many Uber rare Pokémon cards to shame in terms of price ( Despite Pokemon cards having taken decades for card prices to reach their current levels ). 
 
 The major appeal to blockchain card games is that users are able to feel a sense of “tangibility” of their online assets, especially with rising issues of video games developers suspending accounts which hold items that may contain real world value.
 
@@ -49,7 +38,6 @@ Let’s break it down into 5 major points.
 5. Competition
 
 ### 1. Ease of Use
-
 If you are reading this article, you probably already have some experience with digital assets, whether it be Bitcoin, Ethereum, or alt-coins. Unfortunately, crypto currency does have its barriers to entry.
 
 Firstly, in order to be a paying customer on their platform ( meaning that you will purchase card packs in addition to using the free starter deck provided to all players ), you must first obtain the Ethereum to purchase the packs, which means you will most likely need to sign up with a Cryptocurrency exchange, which involves submitting KYC ( know your customer, or in other words, personal data such as a photo of your ID ). This is and will probably always be a problem for blockchain games. It’s hard to say that this system is perfect, when I know 12 year old me would have had a rough time even obtaining card packs today.
@@ -68,11 +56,12 @@ If you want to know more about the in and outs of Ethereum and how gas prices wo
 
 **The TLDR is**, Depending on the current state of the network and gas prices, purchasing GU packs are prone to price increases.
 
-Games like hearthstone offer packs to users for a set price ( usually around \$5 / pack ), unlike GU which prices their decks in Ethereum, meaning that one day, a deck may actually cost more than it did yesterday ( after calculating gas fees ).
+Games like hearthstone offer packs to users for a set price ( usually around $5 / pack ), unlike GU which prices their decks in Ethereum, meaning that one day, a deck may actually cost more than it did yesterday ( after calculating gas fees ).
 
 Although this issue isn’t exclusive to God’s Unchained , it is still a major issue to overcome ( and another technical blockchain aspect you must educate your player base on ).
 
 If gas prices became too high, what would that mean for the market? Not only the buying of cards from the developers be hit, but so will the user-to-user market.
+
 
 ### 3. Unoriginal Game Design = Pooring
 
@@ -86,11 +75,12 @@ The issue with blockchain card games and new card games in general is education.
 
 I do believe there were other reasons to this decision, including trying to win over popular hearthstone players in an attempt to bring their following base to the game and even simply the fact that developing a interesting card game while making it playable in a competitive circuit is very difficult.
 
-I am not in the minds of the developers, and these are only my guesses, but it’s no secret that GU and Zombie Battle Grounds are hearthstone clones at their core, which is disappointing coming from a game that is trying to be “innovative”.
+I am not in the minds of the developers, and these are only my guesses, but it’s no secret that GU and Zombie Battle Grounds are hearthstone clones at their core, which is disappointing coming from a game that is trying to be “innovative”. 
 
 ### 4. Lack of backing by Major Brands
 
-Yes, I did mention that Coinbase ( one of the most popular crypto exchanges ) backed GU and the developers did raised over \$15,000,000 in their pack pre-sale, but let me explain what I mean by “backing”.
+
+Yes, I did mention that Coinbase ( one of the most popular crypto exchanges ) backed GU and the developers did raised over $15,000,000 in their pack pre-sale, but let me explain what I mean by “backing”.
 
 Take Gwent, Hearthstone, Elder Scroll Legends, Artifact, for example. What do these games all have in common? Yes, they are all spinoffs of popular and lore rich video games or series, which is a huge advantage when launching a game in a market as competitive as cards.
 
@@ -107,7 +97,6 @@ For example, it’s hard to deny that an important part of developing a lasting 
 For example, because large brands have an existing fan base they are almost guaranteed that a small portion their fans will play their spinoff card games. One of the best examples is GWENT. GWENT is a good card game on its own, but do you really think it would have seen as much success as it did if it did not have the Witcher Lore? Of course not. In fact, the only major card game I can think of that has seen success without a major existing brand is MTG, but that is a very rare case of the perfect storm, something that hasn’t happened in the CCG/TCG space since.
 
 ## Conslusion
-
-With all of this said, I want it to be clear that I am **not** against the idea of blockchain based card games. In fact, I would love to see a blockchain card game succeed on a mainstream level, and maybe God’s Unchained will make use of their \$15,000,000 in presales and strong development team to to make that happen, but competing against big names like Blizzard will be a huge challenge.
+With all of this said, I want it to be clear that I am **not** against the idea of blockchain based card games. In fact, I would love to see a blockchain card game succeed on a mainstream level, and maybe God’s Unchained will make use of their $15,000,000 in presales and strong development team to to make that happen, but competing against big names like Blizzard will be a huge challenge.
 
 Blockchain is new and growing. New blockchain games are launching each day and have changed the way we perceive gaming. Startups like Stardust.gg have begun offering tools to help game developers easily implement blockchain assets into their games, and hopefully companies like this and the leap of faith games like God’s Unchained have taken will help make blockchain gaming a reality.
