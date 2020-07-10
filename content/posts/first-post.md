@@ -55,9 +55,25 @@ If this sounds familiar, that’s because Valve’s Card game Artifact allowed u
 
 ---
 
-Well, as of now, the game is in version beta 1.4, and according to a source, has a peek player base of around 1,000 active players daily, but it is hard to get an exact player count, as not all “active accounts” are actually playing the game.
+Well, as of now, the game is in its Q3 Beta season and is currently ranked #52 in gaming according to dappradar.com. dapp.com list 10,000 unique active users, with only 3 active users within that last 24hrs, but it is hard to get an exact player count, as not all “active accounts” are actually playing the game and the exact player count is not publically available.
 
-Still, for a non-AAA card game based on Ethereum, I was actually surprised to see the daily active players base for a beta was that large, assuming the numbers are true.
+Still, for a non-AAA card game based on Ethereum, I was actually surprised to see the active players base for a beta was that large, assuming the numbers from these sources are true.
+
+Nevertheless, the game is still seeing gameplay improvements and updates.
+
+According to a a recent [Reddit post](https://www.reddit.com/r/GodsUnchained/comments/hke5ym/state_of_the_beta_q3_2020/) titled "State of the Beta - Q3 2020" by ImmuteableClay, a God's Unchained Team Member...
+
+> Our team has been working incredibly hard across the last quarter in order to make quality of life improvements to not just the game itself, but the wider Gods Unchained experience.
+>
+> In the last quarter, we saw some major improvements to the new player experience arrive in the form of the Welcome Set, a complementary set of 70 unique cards that allow users to customize their starter decks from the get-go. There’s more to come in this space, the next being new tutorial content (which is in the works internally).
+>
+> -<cite> ImmutableClay</cite>
+
+The game was also recieved some much needed improvments to they marketplace.
+
+> Marketplace improvements were high-up on our Q2 list to get out ahead of the expansion, especially in regards to making trinkets and boards tradable alongside cards – all of which is currently done, dusted, and running smoothly. We also announced Immutable X, which is going to greatly increase our functionality and scalability moving forward - a huge priority for us over the year ahead. Not only will this eliminate some of the problematic aspects around gas prices when it comes to fusing, trading and more, but it will also make it much easier to mint assets.
+>
+> -<cite> ImmutableClay</cite>
 
 ## Reasonings
 
@@ -128,6 +144,14 @@ Building off of point 4, a huge issue with entering a space like this is competi
 For example, it’s hard to deny that an important part of developing a lasting and popular digital card game is having a strong Streamer presence and a well funded tournament circuit, both of which are very hard for smaller start-ups and very easy for large companies with existing millions of fans world wide.
 
 For example, because large brands have an existing fan base they are almost guaranteed that a small portion their fans will play their spinoff card games. One of the best examples is GWENT. GWENT is a good card game on its own, but do you really think it would have seen as much success as it did if it did not have the Witcher Lore? Of course not. In fact, the only major card game I can think of that has seen success without a major existing brand is MTG, but that is a very rare case of the perfect storm, something that hasn’t happened in the CCG/TCG space since.
+
+However, I am not saying that God's Unchained ( in particular ) won't be able to provide a strong esports scene. In fact, the same reddit post mentioned earlier in the article sheds some light on the current state of competitive Tounrament play.
+
+> One of the other questions that we commonly receive is around the World Championship and our plans in that area. This is something that we’ve been actively working on internally, but have had to refactor much of our initial thinking around this in light of global travel bans and other limitations to large-scale physical events. It’s looking likely that this will need to move to an online format, but we’ll expand on this in the future with more of the details ironed out. You’ll still need a Tournament Pass in order to enter. The prize pool is currently sitting around the \$570,000 mark, and we’re aiming to have the prizes spread more deeply amongst competitors and not just concentrated on the top spots alone. There’s a lot of work that needs to be done to accomplish this on the scale that we require with up to 20,000 potential entrants, but we can’t wait to share more with you in the future.
+>
+> One of the requisites that we need for the World Championship is the ‘Direct Challenge’ feature, otherwise known as 1v1. We’ve shared previously that production has commenced in this area, and we’re currently aiming for it to land in players’ hands shortly after the launch of Trial of the Gods. The team can’t wait to see what kinds of events you all come up with!
+>
+> -<cite> ImmutableClay</cite>
 
 ## Conclusion
 

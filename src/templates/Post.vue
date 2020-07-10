@@ -72,6 +72,21 @@ query($path: String!) {
 </page-query>
 
 <style>
+blockquote {
+  background-color: #212121;
+  padding: 1em;
+  border-radius: 1em;
+  box-shadow: 0.25em 0.25em 0px #2eff7b;
+}
+
+.posttext a {
+  color: #e24ec1;
+}
+
+cite {
+  color: #e24ec1;
+}
+
 .headerContainer {
   overflow: hidden;
 }

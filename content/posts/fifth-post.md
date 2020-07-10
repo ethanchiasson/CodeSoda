@@ -23,13 +23,6 @@ cover_image: "./images/xrp.png"
 </div>
 </div>
 
-# _#_ The Setup
-
-Before we start, I am assuming you know how to create a folder for your project, open it in your editor, and create a simple HTML boiler plate. Once you are ready, keep reading
-
-Manifest.json
-A chrome extension isn’t as complex as some may thing. A chrome extension can be something as simple as ...
-
-```html
+<!-- ```html
 <h1>Hello World</h1>
-```
+``` -->
