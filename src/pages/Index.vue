@@ -109,7 +109,7 @@ import Footer from "~/components/Footer.vue";
 
 export default {
   metaInfo: {
-    title: "Hello, world!"
+    title: "Home"
   },
   components: {
     Footer

@@ -46,13 +46,6 @@ export default {
       "https://unpkg.com/applause-button/dist/applause-button.js"
     );
     document.head.appendChild(applauseScript);
-
-    // let applauseScriptCSS = document.createElement("link");
-    // applauseScriptCSS.setAttribute(
-    //   "rel",
-    //   "https://unpkg.com/applause-button/dist/applause-button.css"
-    // );
-    // document.head.appendChild(applauseScriptCSS);
   },
   metaInfo: {
     title: "Article"
@@ -79,19 +72,29 @@ query($path: String!) {
 </page-query>
 
 <style>
+.headerContainer {
+  overflow: hidden;
+}
 /* Start TOC Styles */
 
-h2#table-of-contents {
+h3#table-of-contents {
   font-size: 24px;
   text-align: center;
-  padding-top: 5px;
+  padding-top: 0.5em;
+}
+
+.posttext h3 {
+  color: #2eff7b;
 }
 
 .toc {
-  background-color: #212121;
+  background-color: #1a1a1a;
   width: auto;
-  border-radius: 5px;
+  border-radius: 0px;
   color: white;
+  border: #212121 solid 2px;
+  box-shadow: 0.25em 0.25em 0px #2eff7b;
+  margin-bottom: 2em;
 }
 
 .tocList a {
@@ -169,13 +172,54 @@ code {
   color: white;
 }
 
-em {
+hr {
+  border-color: #1ee63f;
+  max-width: 75%;
+  margin-left: 0;
+  border-radius: 1em;
+  background: linear-gradient(45deg, #2eff7b, #00792c);
+}
+
+h2::before {
+  content: "#";
+  color: white;
+  padding: 1.75px;
+  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+  /* background: linear-gradient(45deg, #2eff7b, #00792c); */
+  background-color: #212121;
+  padding: 0.4em;
+  height: 100px;
+  width: 100px;
+  opacity: 1;
+  margin-right: 0.2em;
+  color: #2eff7b;
+}
+
+.author img {
+  border-radius: 5em;
+}
+
+.tocList a::before {
+  content: "#";
   color: white;
   padding: 1.75px;
   border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
   background: #212121;
-  padding: 0.25em;
+  padding: 0.4em;
+  height: 100px;
+  width: 100px;
+  opacity: 1;
+  margin-right: 0.5em;
+  color: #2eff7b;
 }
+
+/* em {
+  color: white;
+  padding: 1.75px;
+  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+  background: linear-gradient(45deg, #2eff7b, #00792c);
+  padding: 0.25em;
+} */
 
 .author {
   margin-top: -15px;
