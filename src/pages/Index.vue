@@ -146,7 +146,7 @@ export default {
   bottom: 0;
   /* background: #2e7eff; */
   border-radius: 50%;
-  opacity: 0.5;
+  opacity: 0.75;
   animation: flying 10s infinite ease-in;
 }
 

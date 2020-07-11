@@ -20,8 +20,7 @@
               </div>
               <div class="newsletterSubtitle">
                 <p2 class="newsletterSubtitle">
-                  Joining our newsletter means that you can stay up to date on the
-                  latest trends in web development and design with our hand picked list of articles
+                  Joining our newsletter means that you can stay up to date on all things blockchain with our hand picked list of articles
                   from our amazingly talented curated authors.
                 </p2>
               </div>
@@ -92,7 +91,6 @@
     </div>
 
     <a :href="href" class="one">Bloq Daily</a>
-
     Copyright {{getCurrentYear}}
   </footer>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="backButton">
-      <a href="javascript:history.go(-1)" class="button">↩</a>
+      <a href="/articles" class="button">Articles</a>
     </div>
     <h1 style="color: white">Posts tagged #{{ $page.tag.title }}</h1>
     <article v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id">

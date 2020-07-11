@@ -3,7 +3,7 @@
     <div
       class="livecoinwatch-widget-5"
       lcw-base="USD"
-      lcw-color-tx="#abb8c3"
+      lcw-color-tx="white"
       lcw-marquee-1="coins"
       lcw-marquee-2="movers"
       lcw-marquee-items="10"
